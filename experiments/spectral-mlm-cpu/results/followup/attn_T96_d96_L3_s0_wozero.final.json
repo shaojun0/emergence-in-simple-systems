@@ -1,0 +1,296 @@
+{
+ "history": [
+  {
+   "step": 0,
+   "val_loss": 4.173991258906206,
+   "val_acc": 0.03449778132938731,
+   "train_loss": 0.0,
+   "lr": 0.004,
+   "elapsed": 1.5175464153289795
+  },
+  {
+   "step": 250,
+   "val_loss": 3.3454245730537004,
+   "val_acc": 0.1608760908139184,
+   "train_loss": 3.3827163778345626,
+   "lr": 0.7864285714285715,
+   "elapsed": 454.01914834976196
+  },
+  {
+   "step": 500,
+   "val_loss": 3.0828122502392428,
+   "val_acc": 0.18576935954593998,
+   "train_loss": 3.29926732960459,
+   "lr": 0.7185714285714286,
+   "elapsed": 888.3307158946991
+  },
+  {
+   "step": 750,
+   "val_loss": 2.750981828343924,
+   "val_acc": 0.2512179228457326,
+   "train_loss": 2.9962866451967036,
+   "lr": 0.6507142857142858,
+   "elapsed": 1311.6639504432678
+  },
+  {
+   "step": 1000,
+   "val_loss": 2.396592683900768,
+   "val_acc": 0.31588582148855515,
+   "train_loss": 2.6687651574058857,
+   "lr": 0.582857142857143,
+   "elapsed": 1736.7401416301727
+  },
+  {
+   "step": 1250,
+   "val_loss": 2.018426673399349,
+   "val_acc": 0.41577731326060574,
+   "train_loss": 2.2511562417413926,
+   "lr": 0.515,
+   "elapsed": 2128.452074289322
+  },
+  {
+   "step": 1500,
+   "val_loss": 1.9039670507177904,
+   "val_acc": 0.4405944533373711,
+   "train_loss": 2.030905305867883,
+   "lr": 0.4471428571428572,
+   "elapsed": 2465.26188993454
+  },
+  {
+   "step": 1750,
+   "val_loss": 1.8371663454546285,
+   "val_acc": 0.46630216832797583,
+   "train_loss": 1.924319940528414,
+   "lr": 0.3792857142857143,
+   "elapsed": 2843.5971722602844
+  },
+  {
+   "step": 2000,
+   "val_loss": 1.7671613851222674,
+   "val_acc": 0.49467882179020495,
+   "train_loss": 1.836544082577222,
+   "lr": 0.3114285714285714,
+   "elapsed": 3262.596069097519
+  },
+  {
+   "step": 2250,
+   "val_loss": 1.685518630612231,
+   "val_acc": 0.49377997333480567,
+   "train_loss": 1.7603448903534136,
+   "lr": 0.2435714285714286,
+   "elapsed": 3666.3698558807373
+  },
+  {
+   "step": 2500,
+   "val_loss": 1.66012876285669,
+   "val_acc": 0.5088196139892948,
+   "train_loss": 1.6930194905481428,
+   "lr": 0.17571428571428582,
+   "elapsed": 4119.231885194778
+  },
+  {
+   "step": 2750,
+   "val_loss": 1.568502321243513,
+   "val_acc": 0.5371793522925862,
+   "train_loss": 1.6135166489940056,
+   "lr": 0.10785714285714293,
+   "elapsed": 4517.385547399521
+  },
+  {
+   "step": 2999,
+   "val_loss": 1.5296658383623862,
+   "val_acc": 0.5519593279386518,
+   "train_loss": 1.5438594153444631,
+   "lr": 0.04027142857142856,
+   "elapsed": 5025.883956670761,
+   "final": true
+  }
+ ],
+ "cloze": [
+  {
+   "context": "u?is, s?r, wa? Cart?age.\n\n",
+   "pos_in_window": 1,
+   "target": "n",
+   "pred": "s"
+  },
+  {
+   "context": "u?is, s?r, wa? Cart?age.\n\nADRIAN",
+   "pos_in_window": 7,
+   "target": "i",
+   "pred": "i"
+  },
+  {
+   "context": "u?is, s?r, wa? Cart?age.\n\nADRIAN:\nCart",
+   "pos_in_window": 13,
+   "target": "s",
+   "pred": "t"
+  },
+  {
+   "context": "u?is, s?r, wa? Cart?age.\n\nADRIAN:\nCarthage?\n",
+   "pos_in_window": 19,
+   "target": "h",
+   "pred": "r"
+  },
+  {
+   "context": "e us a?l!?\nVIN?EN?IO:\nW?ere is ",
+   "pos_in_window": 6,
+   "target": "l",
+   "pred": "l"
+  },
+  {
+   "context": "e us a?l!?\nVIN?EN?IO:\nW?ere is tha",
+   "pos_in_window": 9,
+   "target": "\n",
+   "pred": "\n"
+  },
+  {
+   "context": "e us a?l!?\nVIN?EN?IO:\nW?ere is that dam",
+   "pos_in_window": 14,
+   "target": "C",
+   "pred": "C"
+  },
+  {
+   "context": "e us a?l!?\nVIN?EN?IO:\nW?ere is that damn?d",
+   "pos_in_window": 17,
+   "target": "T",
+   "pred": "T"
+  },
+  {
+   "context": "fir?,\nFetch?in our wood and ",
+   "pos_in_window": 3,
+   "target": "e",
+   "pred": "e"
+  },
+  {
+   "context": "fir?,\nFetch?in our wood and s?rves ?",
+   "pos_in_window": 11,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "fir?,\nFetch?in our wood and s?rves ?n off",
+   "pos_in_window": 16,
+   "target": "u",
+   "pred": "u"
+  },
+  {
+   "context": "ir?,\nFetch?in our wood and s?rves ?n offices\n:hat",
+   "pos_in_window": 24,
+   "target": "n",
+   "pred": "n"
+  },
+  {
+   "context": "e?f?ctio? ?overn, sir,\nTo ",
+   "pos_in_window": 1,
+   "target": "r",
+   "pred": " "
+  },
+  {
+   "context": "e?f?ctio? ?overn, sir,\nTo ex",
+   "pos_in_window": 3,
+   "target": "e",
+   "pred": "e"
+  },
+  {
+   "context": "e?f?ctio? ?overn, sir,\nTo excel ?",
+   "pos_in_window": 8,
+   "target": "n",
+   "pred": "r"
+  },
+  {
+   "context": "e?f?ctio? ?overn, sir,\nTo excel ?he",
+   "pos_in_window": 10,
+   "target": "g",
+   "pred": "l"
+  },
+  {
+   "context": "way?\nWelcome! o?e mess is lik? to be?you",
+   "pos_in_window": 15,
+   "target": "n",
+   "pred": "m"
+  },
+  {
+   "context": "Welcome! o?e mess is lik? to be?your cheer?\nCome,",
+   "pos_in_window": 24,
+   "target": "e",
+   "pred": "e"
+  },
+  {
+   "context": "! o?e mess is lik? to be?your cheer?\nCome, s?r; w",
+   "pos_in_window": 24,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "is lik? to be?your cheer?\nCome, s?r; we will bett",
+   "pos_in_window": 24,
+   "target": ":",
+   "pred": ":"
+  },
+  {
+   "context": "Spoke l?ke an offi?e?; hS' to th",
+   "pos_in_window": 7,
+   "target": "i",
+   "pred": "i"
+  },
+  {
+   "context": "Spoke l?ke an offi?e?; hS' to the?,",
+   "pos_in_window": 10,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "Spoke l?ke an offi?e?; hS' to the?, ?ad!\n\nB",
+   "pos_in_window": 18,
+   "target": "c",
+   "pred": "v"
+  },
+  {
+   "context": "Spoke l?ke an offi?e?; hS' to the?, ?ad!\n\nBAP",
+   "pos_in_window": 20,
+   "target": "r",
+   "pred": "r"
+  }
+ ],
+ "meta": {
+  "tag": "attn_T96_d96_L3_s0_wozero",
+  "mix": "attn",
+  "T": 96,
+  "d": 96,
+  "L": 3,
+  "F": 384,
+  "steps": 3000,
+  "params": 342048,
+  "mix_params": 111744,
+  "vocab": 66,
+  "seconds": 5025.9947872161865,
+  "args": {
+   "mix": "attn",
+   "data": "data/tinyshakespeare.txt",
+   "outdir": "runs/followup",
+   "steps": 3000,
+   "T": 96,
+   "t_max": 768,
+   "d": 96,
+   "L": 3,
+   "F": 384,
+   "heads": 4,
+   "batch": 24,
+   "eval_batch": 8,
+   "extrap_batch": 4,
+   "eval_every": 250,
+   "eval_batches": 6,
+   "lr": 0.8,
+   "momentum": 0.9,
+   "clip": 1.0,
+   "warmup": 200,
+   "mask_prob": 0.15,
+   "pos": "sin",
+   "seed": 0,
+   "wo_zero": true,
+   "gradcheck": false,
+   "extrapolate": [],
+   "tag_suffix": "_wozero"
+  }
+ }
+}

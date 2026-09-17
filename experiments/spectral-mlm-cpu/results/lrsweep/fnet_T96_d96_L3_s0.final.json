@@ -1,0 +1,206 @@
+{
+ "history": [
+  {
+   "step": 0,
+   "val_loss": 4.2006873571770456,
+   "val_acc": 0.021239395055440924,
+   "train_loss": 0.0,
+   "lr": 0.006,
+   "elapsed": 0.449171781539917
+  },
+  {
+   "step": 399,
+   "val_loss": 2.910351021997016,
+   "val_acc": 0.23895382491196127,
+   "train_loss": 3.2183569288778684,
+   "lr": 0.06570000000000009,
+   "elapsed": 323.4520356655121,
+   "final": true
+  }
+ ],
+ "cloze": [
+  {
+   "context": "u?is, s?r, wa? Cart?age.\n\n",
+   "pos_in_window": 1,
+   "target": "n",
+   "pred": " "
+  },
+  {
+   "context": "u?is, s?r, wa? Cart?age.\n\nADRIAN",
+   "pos_in_window": 7,
+   "target": "i",
+   "pred": " "
+  },
+  {
+   "context": "u?is, s?r, wa? Cart?age.\n\nADRIAN:\nCart",
+   "pos_in_window": 13,
+   "target": "s",
+   "pred": " "
+  },
+  {
+   "context": "u?is, s?r, wa? Cart?age.\n\nADRIAN:\nCarthage?\n",
+   "pos_in_window": 19,
+   "target": "h",
+   "pred": " "
+  },
+  {
+   "context": "e us a?l!?\nVIN?EN?IO:\nW?ere is ",
+   "pos_in_window": 6,
+   "target": "l",
+   "pred": "s"
+  },
+  {
+   "context": "e us a?l!?\nVIN?EN?IO:\nW?ere is tha",
+   "pos_in_window": 9,
+   "target": "\n",
+   "pred": "\n"
+  },
+  {
+   "context": "e us a?l!?\nVIN?EN?IO:\nW?ere is that dam",
+   "pos_in_window": 14,
+   "target": "C",
+   "pred": "A"
+  },
+  {
+   "context": "e us a?l!?\nVIN?EN?IO:\nW?ere is that damn?d",
+   "pos_in_window": 17,
+   "target": "T",
+   "pred": "\n"
+  },
+  {
+   "context": "fir?,\nFetch?in our wood and ",
+   "pos_in_window": 3,
+   "target": "e",
+   "pred": "e"
+  },
+  {
+   "context": "fir?,\nFetch?in our wood and s?rves ?",
+   "pos_in_window": 11,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "fir?,\nFetch?in our wood and s?rves ?n off",
+   "pos_in_window": 16,
+   "target": "u",
+   "pred": "u"
+  },
+  {
+   "context": "ir?,\nFetch?in our wood and s?rves ?n offices\n:hat",
+   "pos_in_window": 24,
+   "target": "n",
+   "pred": " "
+  },
+  {
+   "context": "e?f?ctio? ?overn, sir,\nTo ",
+   "pos_in_window": 1,
+   "target": "r",
+   "pred": " "
+  },
+  {
+   "context": "e?f?ctio? ?overn, sir,\nTo ex",
+   "pos_in_window": 3,
+   "target": "e",
+   "pred": "o"
+  },
+  {
+   "context": "e?f?ctio? ?overn, sir,\nTo excel ?",
+   "pos_in_window": 8,
+   "target": "n",
+   "pred": "e"
+  },
+  {
+   "context": "e?f?ctio? ?overn, sir,\nTo excel ?he",
+   "pos_in_window": 10,
+   "target": "g",
+   "pred": "e"
+  },
+  {
+   "context": "way?\nWelcome! o?e mess is lik? to be?you",
+   "pos_in_window": 15,
+   "target": "n",
+   "pred": " "
+  },
+  {
+   "context": "Welcome! o?e mess is lik? to be?your cheer?\nCome,",
+   "pos_in_window": 24,
+   "target": "e",
+   "pred": " "
+  },
+  {
+   "context": "! o?e mess is lik? to be?your cheer?\nCome, s?r; w",
+   "pos_in_window": 24,
+   "target": " ",
+   "pred": "r"
+  },
+  {
+   "context": "is lik? to be?your cheer?\nCome, s?r; we will bett",
+   "pos_in_window": 24,
+   "target": ":",
+   "pred": " "
+  },
+  {
+   "context": "Spoke l?ke an offi?e?; hS' to th",
+   "pos_in_window": 7,
+   "target": "i",
+   "pred": "o"
+  },
+  {
+   "context": "Spoke l?ke an offi?e?; hS' to the?,",
+   "pos_in_window": 10,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "Spoke l?ke an offi?e?; hS' to the?, ?ad!\n\nB",
+   "pos_in_window": 18,
+   "target": "c",
+   "pred": " "
+  },
+  {
+   "context": "Spoke l?ke an offi?e?; hS' to the?, ?ad!\n\nBAP",
+   "pos_in_window": 20,
+   "target": "r",
+   "pred": " "
+  }
+ ],
+ "meta": {
+  "tag": "fnet_T96_d96_L3_s0",
+  "mix": "fnet",
+  "T": 96,
+  "d": 96,
+  "L": 3,
+  "F": 384,
+  "steps": 400,
+  "params": 230304,
+  "mix_params": 0,
+  "vocab": 66,
+  "seconds": 323.5083842277527,
+  "args": {
+   "mix": "fnet",
+   "data": "data/tinyshakespeare.txt",
+   "outdir": "runs/lrsweep",
+   "steps": 400,
+   "T": 96,
+   "t_max": 768,
+   "d": 96,
+   "L": 3,
+   "F": 384,
+   "heads": 4,
+   "batch": 24,
+   "eval_batch": 8,
+   "extrap_batch": 4,
+   "eval_every": 400,
+   "eval_batches": 6,
+   "lr": 1.2,
+   "momentum": 0.9,
+   "clip": 1.0,
+   "warmup": 200,
+   "mask_prob": 0.15,
+   "pos": "sin",
+   "seed": 0,
+   "gradcheck": false,
+   "extrapolate": []
+  }
+ }
+}

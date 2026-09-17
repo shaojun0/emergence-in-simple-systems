@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.weights.npz        # 3.6MB model weights; regenerate via --save_weights
+logs/
+runs/
+!experiments/*/results/
+*.tmp
+.DS_Store
