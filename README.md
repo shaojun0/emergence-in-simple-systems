@@ -137,6 +137,54 @@ d/L/T 从 96/3/96 放大到 **384/6/512**（spectral 臂 9.54 M 参数）。新�
 
 ---
 
+## 实验三：把果蝇全脑连接组当成算子（已完成）
+
+**问题**：实验一、二用的都是**人造**的混合算子（傅里叶谱滤波、注意力、stencil）。
+把一只果蝇的**真实接线**当作算子，能学会 4-gram 吗？它比随机接线更好吗？
+
+**做法**：取 [FlyWire](https://zenodo.org/records/10676866) 全脑连接组 v783
+（16,847,997 行、54,492,922 个突触、含神经递质预测），抽出突触总量最大的
+**top-1000 神经元核心**（53,362 条边、54% 抑制性）当作一个**冻结的储层**：
+`h_t = tanh(W(leak·h_{t-1} + (1−leak)·u_t))`，只有读出层被训练。四条配对对照：
+度序列保持的双重边交换、拓扑不变但权重打乱、每个神经元入权重总和精确不变、以及只匹配
+节点数与边数的 Erdős–Rényi 图。全部归一到同一谱半径。
+
+**结果**（TinyShakespeare 字级下一 token 预测，3 种子，N=1000，MLP 读出）：
+
+| 接线 | val loss | acc |
+|---|---|---|
+| **`er`（纯随机）** | **2.0279 ± 0.0263** | 0.4358 |
+| `row_weight_shuffle` | **2.0271 ± 0.0144** | **0.4406** |
+| `fly`（果蝇） | 2.0720 ± 0.0122 | 0.4254 |
+| `degree_swap` | 2.0748 ± 0.0132 | 0.4217 |
+| `shuffle_weights` | 2.0795 ± 0.0173 | 0.4126 |
+| —— 3-gram markov / 4-gram markov | 2.0740 / **1.8285** | 0.3842 / 0.4648 |
+
+**三条结论**：
+
+1. **学不会 4-gram。** 最好的结果 2.0271 离 4-gram 的 1.8285 还差 **0.20 nats**，
+   落在 **3-gram（2.0740）**水平。
+2. **果蝇接线不比随机接线好。** 两种读出下 `er` 都优于果蝇；MLP 读出下差距 **0.044**，
+   超过种子噪声 0.019。果蝇只赢了两条**破坏权重分配**的对照。
+   这与独立先例 [flybook-git/flm](https://github.com/flybook-git/flm) 同向
+   （其 README 自述配对对照"略好"，未证明果蝇解剖结构有优势）。
+3. **机制是记忆长度。** 用同一线性探针测"能否从 h_t 解码 x_{t−k}"：
+   **lag-3 果蝇 0.515 vs 随机 0.777**，lag-6 两者都掉回 unigram。
+   4-gram 需要 lag 1–3，而果蝇恰好在最要紧的那一档先塌。
+
+> **判据 6 现在有了第三种独立证据。** 实验一/二证明"人造的丰富算子不会自己买到长程"；
+> 实验三证明**生物真实接线也不会**——至少在以"top-1000 hub 核心 + 固定随机输入投影 +
+> 训练读出"这种方式接入时不会。**参数化里有长程通路 ≠ 系统真的用了长程。**
+
+顺带产出：谱半径必须用 `rho(W)` 而非 `rho(|W|)`（后者会把动力学压进线性区，
+实测 51% 神经元变死单元）；记忆与非线性是**权衡**而非越大越好；
+连接表是 `(pre,post,neuropil)` 三元组，必须先合并突触数再取 log。
+
+完整报告、机制诊断与诚实局限见
+[`docs/07-experiment-3-fly-connectome.md`](docs/07-experiment-3-fly-connectome.md)。
+
+---
+
 ## 仓库结构
 
 ```
@@ -148,6 +196,7 @@ docs/                                讨论与实验文档
   04-experiment-design.md            实验一设计文档（架构、约束、复现）
   05-findings-and-open-questions.md  反直觉发现与下一步实验清单
   06-experiment-2-scaleup-report.md  实验二完整报告（100× 放大 + Q1/Q2/Q3/Q7）
+  07-experiment-3-fly-connectome.md  实验三完整报告（果蝇连接组当储层）
 experiments/
   spectral-mlm-cpu/                  实验一代码（纯 NumPy，无 autograd）
     spectral_bert.py                 模型 + 手推反向传播 + SGD + MLM 训练
@@ -162,6 +211,15 @@ experiments/
     scripts/check_ln_bug_independent.py  该 bug 的独立复核（不同方法 + 机器判据）
     scripts/verify_claims.py         从原始 run 文件复算报告里的 78 个数字
     runs/ logs/ figures/ ref/        原始运行数据、stdout、图、等价性参考 dump
+  fly-connectome-reservoir/          实验三代码（连接组当冻结储层）
+    scripts/graphs.py                FlyWire 解析、子图抽取、四类对照接线
+    scripts/reservoir.py             储层扫描 + 线性/MLP 读出
+    scripts/run_experiment.py        五条接线 × 两种读出 × 多种子
+    scripts/probe_memory.py          记忆容量探针（解释果蝇为何更差）
+    scripts/verify_graphs.py         对照图不变式校验（23 项）
+    scripts/test_load_flywire.py     连接组朝向/符号校验（10 项）
+    scripts/verify_claims.py         复算报告里的 63 个数字
+    results/ figures/                派生子图（136 KB）、结果、三张图
 ```
 
 ## 复现实验一
@@ -189,6 +247,26 @@ python scripts/run_stageC.py ladder            # Stage C：s1/s2/s3 × 4 臂
 python scripts/run_stageD.py                   # Stage D：长程合成任务
 python scripts/plot.py                         # 出图
 python scripts/verify_claims.py                # 复算报告里的 78 个数字
+```
+
+## 复现实验三
+
+需要 `torch + scipy + pandas + pyarrow + matplotlib`。**812 MB 的连接组原表不必下载**——
+派生的 136 KB 子图已纳入版本控制。
+
+```bash
+cd experiments/fly-connectome-reservoir
+python scripts/verify_graphs.py --N 400        # 对照图不变式 23/23
+python scripts/test_load_flywire.py            # 连接组朝向/符号 10/10
+python scripts/run_experiment.py --subgraph results/fly_subgraph_N1000.npz \
+    --mode causal --readout both --leaks 0.97 --input_scales 10 --seed 0 \
+    --out results/causal_seed0.json
+python scripts/summarize.py --inputs "results/causal_seed*.json" --out results/causal_summary.json
+python scripts/probe_memory.py --subgraph results/fly_subgraph_N1000.npz \
+    --leaks 0.97 --input_scales 10 --out results/probe_fly.json
+python scripts/plot.py --results results/causal_summary.json \
+    --subgraph results/fly_subgraph_N1000.npz
+python scripts/verify_claims.py                # 复算报告里的 63 个数字
 ```
 
 ## 如何参与
