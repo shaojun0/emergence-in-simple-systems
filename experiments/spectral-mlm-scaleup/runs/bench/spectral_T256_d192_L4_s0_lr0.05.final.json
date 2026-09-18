@@ -1,0 +1,345 @@
+{
+ "history": [
+  {
+   "step": 0,
+   "val_loss": 5.350225448608398,
+   "val_acc": 0.006523032466428693,
+   "train_loss": 0.0,
+   "lr": 0.005,
+   "elapsed": 1.0869007110595703
+  },
+  {
+   "step": 20,
+   "val_loss": 3.5638097524642944,
+   "val_acc": 0.12393761686214518,
+   "train_loss": 4.416870534420013,
+   "lr": 0.03416666666666667,
+   "elapsed": 2.7736732959747314
+  },
+  {
+   "step": 39,
+   "val_loss": 3.478129744529724,
+   "val_acc": 0.12393761686214518,
+   "train_loss": 3.6430949091911318,
+   "lr": 0.004083333333333334,
+   "elapsed": 3.9085516929626465,
+   "final": true
+  }
+ ],
+ "diagnostics": {
+  "kernel_lag": [
+   {
+    "layer": 0,
+    "mean_abs_H": 1.0000020265579224,
+    "max_abs_H": 1.0060454607009888,
+    "mean_self_fraction": 1.0,
+    "min_self_fraction": 0.9999998211860657,
+    "frac_channels_mostly_global": 0.0,
+    "lag0": 1.0,
+    "lag1": 2.4798728629174607e-10,
+    "lag2": 2.3043677862572354e-10,
+    "lag3": 2.2460983140993313e-10,
+    "lag4": 2.2292167482410858e-10,
+    "lag5": 2.197951416221204e-10,
+    "lag6": 2.1668570573785702e-10,
+    "lag7": 2.1625588583154886e-10,
+    "lag8": 2.1265047970454218e-10,
+    "lag9": 2.1488031040191974e-10,
+    "lag10": 2.2038718250731717e-10,
+    "lag11": 2.226778900178057e-10,
+    "lag12": 2.268455832563063e-10,
+    "lag13": 2.2760767213922021e-10,
+    "lag14": 2.2223200899484698e-10,
+    "lag15": 2.1957317254914814e-10,
+    "lag16": 2.1827135243169537e-10,
+    "offdiag_r90": 113,
+    "self_fraction": 1.0
+   },
+   {
+    "layer": 1,
+    "mean_abs_H": 1.0000007152557373,
+    "max_abs_H": 1.0030176639556885,
+    "mean_self_fraction": 1.0,
+    "min_self_fraction": 0.9999999403953552,
+    "frac_channels_mostly_global": 0.0,
+    "lag0": 1.0,
+    "lag1": 7.769244789252054e-11,
+    "lag2": 7.306676462436361e-11,
+    "lag3": 7.062792695530861e-11,
+    "lag4": 7.039454031373148e-11,
+    "lag5": 6.953003552228894e-11,
+    "lag6": 6.843415173618998e-11,
+    "lag7": 6.79199258214394e-11,
+    "lag8": 6.65268686578419e-11,
+    "lag9": 6.665816136499409e-11,
+    "lag10": 6.793638019954314e-11,
+    "lag11": 6.856120710560166e-11,
+    "lag12": 6.99092078613469e-11,
+    "lag13": 7.086962173944249e-11,
+    "lag14": 6.960710325892327e-11,
+    "lag15": 6.848863113200887e-11,
+    "lag16": 6.826468135614206e-11,
+    "offdiag_r90": 114,
+    "self_fraction": 1.0
+   },
+   {
+    "layer": 2,
+    "mean_abs_H": 1.000000238418579,
+    "max_abs_H": 1.0021899938583374,
+    "mean_self_fraction": 1.0,
+    "min_self_fraction": 1.0,
+    "frac_channels_mostly_global": 0.0,
+    "lag0": 1.0,
+    "lag1": 3.463614912903652e-11,
+    "lag2": 3.2697814447423466e-11,
+    "lag3": 3.1469401272980606e-11,
+    "lag4": 3.1556789536126535e-11,
+    "lag5": 3.148751637744726e-11,
+    "lag6": 3.1200760194918396e-11,
+    "lag7": 3.0776637304744724e-11,
+    "lag8": 3.0071989346882995e-11,
+    "lag9": 3.0073920668669214e-11,
+    "lag10": 3.076418895282446e-11,
+    "lag11": 3.129172892048955e-11,
+    "lag12": 3.2055708933992036e-11,
+    "lag13": 3.251815063618039e-11,
+    "lag14": 3.195769030566114e-11,
+    "lag15": 3.153085893906632e-11,
+    "lag16": 3.147715200268793e-11,
+    "offdiag_r90": 114,
+    "self_fraction": 1.0
+   },
+   {
+    "layer": 3,
+    "mean_abs_H": 1.0,
+    "max_abs_H": 1.0016368627548218,
+    "mean_self_fraction": 1.0,
+    "min_self_fraction": 1.0,
+    "frac_channels_mostly_global": 0.0,
+    "lag0": 1.0,
+    "lag1": 1.9995240867051103e-11,
+    "lag2": 1.8906906724158906e-11,
+    "lag3": 1.81834191878031e-11,
+    "lag4": 1.8364757711950813e-11,
+    "lag5": 1.858594278684092e-11,
+    "lag6": 1.8582136808071707e-11,
+    "lag7": 1.833340320074118e-11,
+    "lag8": 1.790744235899997e-11,
+    "lag9": 1.7783434064425696e-11,
+    "lag10": 1.815047104585996e-11,
+    "lag11": 1.8390616625739813e-11,
+    "lag12": 1.8768007581018125e-11,
+    "lag13": 1.908248828619384e-11,
+    "lag14": 1.8839219051298602e-11,
+    "lag15": 1.8653983186387522e-11,
+    "lag16": 1.8559233859561985e-11,
+    "offdiag_r90": 114,
+    "self_fraction": 1.0
+   }
+  ]
+ },
+ "cloze": [
+  {
+   "context": "means that much of ??? dr?ving fo?ce ?o?for?",
+   "pos_in_window": 19,
+   "target": "t",
+   "pred": " "
+  },
+  {
+   "context": "means that much of ??? dr?ving fo?ce ?o?for??",
+   "pos_in_window": 20,
+   "target": "h",
+   "pred": " "
+  },
+  {
+   "context": "means that much of ??? dr?ving fo?ce ?o?for??s",
+   "pos_in_window": 21,
+   "target": "e",
+   "pred": " "
+  },
+  {
+   "context": "eans that much of ??? dr?ving fo?ce ?o?for??such ",
+   "pos_in_window": 24,
+   "target": "i",
+   "pred": " "
+  },
+  {
+   "context": "ition.\nOthers?were not?so fortunate.?I",
+   "pos_in_window": 13,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "ition.\nOthers?were not?so fortunate.?In?[[1529]",
+   "pos_in_window": 22,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "s?were not?so fortunate.?In?[[1529]]?a congregati",
+   "pos_in_window": 24,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "ere not?so fortunate.?In?[[1529]]?a congregation ",
+   "pos_in_window": 24,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": " (if the??disagree with the major",
+   "pos_in_window": 8,
+   "target": "y",
+   "pred": " "
+  },
+  {
+   "context": " (if the??disagree with the majori",
+   "pos_in_window": 9,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": " (if the??disagree with the majority). N? ",
+   "pos_in_window": 17,
+   "target": "e",
+   "pred": " "
+  },
+  {
+   "context": "ee with the majority). N? appeal i? p?ssible?\n\n==",
+   "pos_in_window": 24,
+   "target": "o",
+   "pred": " "
+  },
+  {
+   "context": "pean sou?d laws}}\nA? the  Proto-I",
+   "pos_in_window": 8,
+   "target": "n",
+   "pred": " "
+  },
+  {
+   "context": "pean sou?d laws}}\nA? the  Proto-Indo-Europea",
+   "pos_in_window": 19,
+   "target": "s",
+   "pred": " "
+  },
+  {
+   "context": "pean sou?d laws}}\nA? the  Proto-Indo-European l",
+   "pos_in_window": 22,
+   "target": "h",
+   "pred": " "
+  },
+  {
+   "context": "an sou?d laws}}\nA? the  Proto-Indo-European l?ngu",
+   "pos_in_window": 24,
+   "target": "P",
+   "pred": " "
+  },
+  {
+   "context": "?is ?lso forced?to c?t ba",
+   "pos_in_window": 0,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "?is ?lso forced?to c?t back a",
+   "pos_in_window": 4,
+   "target": "a",
+   "pred": " "
+  },
+  {
+   "context": "?is ?lso forced?to c?t back af?er be?ng ",
+   "pos_in_window": 15,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "?is ?lso forced?to c?t back af?er be?ng sent ",
+   "pos_in_window": 20,
+   "target": "u",
+   "pred": " "
+  },
+  {
+   "context": "??SEPP]]\n* ???t?:?/www.ma",
+   "pos_in_window": 0,
+   "target": "[",
+   "pred": " "
+  },
+  {
+   "context": "??SEPP]]\n* ???t?:?/www.ma?",
+   "pos_in_window": 1,
+   "target": "[",
+   "pred": " "
+  },
+  {
+   "context": "??SEPP]]\n* ???t?:?/www.ma?icore.com/",
+   "pos_in_window": 11,
+   "target": "[",
+   "pred": " "
+  },
+  {
+   "context": "??SEPP]]\n* ???t?:?/www.ma?icore.com/a",
+   "pos_in_window": 12,
+   "target": "h",
+   "pred": " "
+  }
+ ],
+ "meta": {
+  "tag": "spectral_T256_d192_L4_s0_lr0.05",
+  "mix": "spectral",
+  "T": 256,
+  "d": 192,
+  "L": 4,
+  "F": 768,
+  "steps": 40,
+  "params": 1817856,
+  "mix_params": 591360,
+  "active_mix": 198144,
+  "vocab": 206,
+  "corpus_bytes": 100000000,
+  "tokens_per_step": 4096,
+  "seconds": 4.639973163604736,
+  "device": "cuda",
+  "dtype": "float32",
+  "args": {
+   "mix": "spectral",
+   "data": "D:\\dsh\\work\\data\\enwik8",
+   "encoding": "latin-1",
+   "val_frac": 0.05,
+   "outdir": "D:\\dsh\\work\\scaleup\\runs\\bench",
+   "tag": "",
+   "device": "cuda",
+   "dtype": "float32",
+   "tf32": false,
+   "steps": 40,
+   "T": 256,
+   "t_max": 768,
+   "d": 192,
+   "L": 4,
+   "F": 768,
+   "heads": 6,
+   "stencil_k": 2,
+   "batch": 16,
+   "grad_accum": 1,
+   "eval_batch": 4,
+   "extrap_batch": 4,
+   "eval_every": 20,
+   "eval_batches": 2,
+   "lr": 0.05,
+   "momentum": 0.9,
+   "clip": 1.0,
+   "warmup": 10,
+   "mask_prob": 0.15,
+   "pos": "sin",
+   "seed": 0,
+   "wo_zero": false,
+   "extrapolate": [],
+   "save_weights": false,
+   "save_every": 0,
+   "resume": false,
+   "equiv_npz": null,
+   "equiv_bug": "upstream",
+   "upstream_bug": false
+  }
+ }
+}

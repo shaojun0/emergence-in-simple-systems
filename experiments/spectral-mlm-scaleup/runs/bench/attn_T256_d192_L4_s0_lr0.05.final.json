@@ -1,0 +1,261 @@
+{
+ "history": [
+  {
+   "step": 0,
+   "val_loss": 5.337118864059448,
+   "val_acc": 0.0,
+   "train_loss": 0.0,
+   "lr": 0.005,
+   "elapsed": 0.850059986114502
+  },
+  {
+   "step": 20,
+   "val_loss": 3.524860978126526,
+   "val_acc": 0.12393761686214518,
+   "train_loss": 4.22790435552597,
+   "lr": 0.03416666666666667,
+   "elapsed": 2.942615509033203
+  },
+  {
+   "step": 39,
+   "val_loss": 3.4386727809906006,
+   "val_acc": 0.12393761686214518,
+   "train_loss": 3.574988400936127,
+   "lr": 0.004083333333333334,
+   "elapsed": 4.735409259796143,
+   "final": true
+  }
+ ],
+ "diagnostics": {
+  "attention": [
+   {
+    "entropy": 5.280862331390381,
+    "mean_distance": 85.88397216796875,
+    "max_weight": 0.019082214683294296,
+    "uniform_distance": 85.33333333333333
+   },
+   {
+    "entropy": 5.477068901062012,
+    "mean_distance": 85.43523406982422,
+    "max_weight": 0.009413953870534897,
+    "uniform_distance": 85.33333333333333
+   },
+   {
+    "entropy": 5.517444610595703,
+    "mean_distance": 85.35147094726562,
+    "max_weight": 0.006773684173822403,
+    "uniform_distance": 85.33333333333333
+   },
+   {
+    "entropy": 5.53140926361084,
+    "mean_distance": 84.58465576171875,
+    "max_weight": 0.006009963806718588,
+    "uniform_distance": 85.33333333333333
+   }
+  ]
+ },
+ "cloze": [
+  {
+   "context": "means that much of ??? dr?ving fo?ce ?o?for?",
+   "pos_in_window": 19,
+   "target": "t",
+   "pred": " "
+  },
+  {
+   "context": "means that much of ??? dr?ving fo?ce ?o?for??",
+   "pos_in_window": 20,
+   "target": "h",
+   "pred": " "
+  },
+  {
+   "context": "means that much of ??? dr?ving fo?ce ?o?for??s",
+   "pos_in_window": 21,
+   "target": "e",
+   "pred": " "
+  },
+  {
+   "context": "eans that much of ??? dr?ving fo?ce ?o?for??such ",
+   "pos_in_window": 24,
+   "target": "i",
+   "pred": " "
+  },
+  {
+   "context": "ition.\nOthers?were not?so fortunate.?I",
+   "pos_in_window": 13,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "ition.\nOthers?were not?so fortunate.?In?[[1529]",
+   "pos_in_window": 22,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "s?were not?so fortunate.?In?[[1529]]?a congregati",
+   "pos_in_window": 24,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "ere not?so fortunate.?In?[[1529]]?a congregation ",
+   "pos_in_window": 24,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": " (if the??disagree with the major",
+   "pos_in_window": 8,
+   "target": "y",
+   "pred": " "
+  },
+  {
+   "context": " (if the??disagree with the majori",
+   "pos_in_window": 9,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": " (if the??disagree with the majority). N? ",
+   "pos_in_window": 17,
+   "target": "e",
+   "pred": " "
+  },
+  {
+   "context": "ee with the majority). N? appeal i? p?ssible?\n\n==",
+   "pos_in_window": 24,
+   "target": "o",
+   "pred": " "
+  },
+  {
+   "context": "pean sou?d laws}}\nA? the  Proto-I",
+   "pos_in_window": 8,
+   "target": "n",
+   "pred": " "
+  },
+  {
+   "context": "pean sou?d laws}}\nA? the  Proto-Indo-Europea",
+   "pos_in_window": 19,
+   "target": "s",
+   "pred": " "
+  },
+  {
+   "context": "pean sou?d laws}}\nA? the  Proto-Indo-European l",
+   "pos_in_window": 22,
+   "target": "h",
+   "pred": " "
+  },
+  {
+   "context": "an sou?d laws}}\nA? the  Proto-Indo-European l?ngu",
+   "pos_in_window": 24,
+   "target": "P",
+   "pred": " "
+  },
+  {
+   "context": "?is ?lso forced?to c?t ba",
+   "pos_in_window": 0,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "?is ?lso forced?to c?t back a",
+   "pos_in_window": 4,
+   "target": "a",
+   "pred": " "
+  },
+  {
+   "context": "?is ?lso forced?to c?t back af?er be?ng ",
+   "pos_in_window": 15,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "?is ?lso forced?to c?t back af?er be?ng sent ",
+   "pos_in_window": 20,
+   "target": "u",
+   "pred": " "
+  },
+  {
+   "context": "??SEPP]]\n* ???t?:?/www.ma",
+   "pos_in_window": 0,
+   "target": "[",
+   "pred": " "
+  },
+  {
+   "context": "??SEPP]]\n* ???t?:?/www.ma?",
+   "pos_in_window": 1,
+   "target": "[",
+   "pred": " "
+  },
+  {
+   "context": "??SEPP]]\n* ???t?:?/www.ma?icore.com/",
+   "pos_in_window": 11,
+   "target": "[",
+   "pred": " "
+  },
+  {
+   "context": "??SEPP]]\n* ???t?:?/www.ma?icore.com/a",
+   "pos_in_window": 12,
+   "target": "h",
+   "pred": " "
+  }
+ ],
+ "meta": {
+  "tag": "attn_T256_d192_L4_s0_lr0.05",
+  "mix": "attn",
+  "T": 256,
+  "d": 192,
+  "L": 4,
+  "F": 768,
+  "steps": 40,
+  "params": 1819392,
+  "mix_params": 592896,
+  "active_mix": 592896,
+  "vocab": 206,
+  "corpus_bytes": 100000000,
+  "tokens_per_step": 4096,
+  "seconds": 4.884221076965332,
+  "device": "cuda",
+  "dtype": "float32",
+  "args": {
+   "mix": "attn",
+   "data": "D:\\dsh\\work\\data\\enwik8",
+   "encoding": "latin-1",
+   "val_frac": 0.05,
+   "outdir": "D:\\dsh\\work\\scaleup\\runs\\bench",
+   "tag": "",
+   "device": "cuda",
+   "dtype": "float32",
+   "tf32": false,
+   "steps": 40,
+   "T": 256,
+   "t_max": 768,
+   "d": 192,
+   "L": 4,
+   "F": 768,
+   "heads": 6,
+   "stencil_k": 2,
+   "batch": 16,
+   "grad_accum": 1,
+   "eval_batch": 4,
+   "extrap_batch": 4,
+   "eval_every": 20,
+   "eval_batches": 2,
+   "lr": 0.05,
+   "momentum": 0.9,
+   "clip": 1.0,
+   "warmup": 10,
+   "mask_prob": 0.15,
+   "pos": "sin",
+   "seed": 0,
+   "wo_zero": false,
+   "extrapolate": [],
+   "save_weights": false,
+   "save_every": 0,
+   "resume": false,
+   "equiv_npz": null,
+   "equiv_bug": "upstream",
+   "upstream_bug": false
+  }
+ }
+}

@@ -1,0 +1,415 @@
+{
+ "history": [
+  {
+   "step": 0,
+   "val_loss": 4.2308746764376215,
+   "val_acc": 0.0091201283892314,
+   "train_loss": 0.0,
+   "lr": 0.004,
+   "elapsed": 1.7380070686340332
+  },
+  {
+   "step": 250,
+   "val_loss": 3.3558755255702235,
+   "val_acc": 0.08513068028728431,
+   "train_loss": 3.3811425867412868,
+   "lr": 0.793448275862069,
+   "elapsed": 308.3552215099335
+  },
+  {
+   "step": 500,
+   "val_loss": 3.1722925766555026,
+   "val_acc": 0.16516939391287486,
+   "train_loss": 3.2974101303261367,
+   "lr": 0.7606896551724138,
+   "elapsed": 625.0499310493469
+  },
+  {
+   "step": 750,
+   "val_loss": 2.647389525192503,
+   "val_acc": 0.2687837496743965,
+   "train_loss": 2.984550795607065,
+   "lr": 0.7279310344827588,
+   "elapsed": 939.4938044548035
+  },
+  {
+   "step": 1000,
+   "val_loss": 2.444757125810988,
+   "val_acc": 0.3113079621373261,
+   "train_loss": 2.5220672136992066,
+   "lr": 0.6951724137931035,
+   "elapsed": 1254.003467798233
+  },
+  {
+   "step": 1250,
+   "val_loss": 3.229624501544381,
+   "val_acc": 0.1726955825037182,
+   "train_loss": 2.836025797992263,
+   "lr": 0.6624137931034483,
+   "elapsed": 1559.7881371974945
+  },
+  {
+   "step": 1500,
+   "val_loss": 3.3623327212652474,
+   "val_acc": 0.1285079194049525,
+   "train_loss": 3.334738390640599,
+   "lr": 0.6296551724137931,
+   "elapsed": 1867.6615657806396
+  },
+  {
+   "step": 1750,
+   "val_loss": 3.2678532511648855,
+   "val_acc": 0.16562013754591684,
+   "train_loss": 3.385841266055917,
+   "lr": 0.5968965517241379,
+   "elapsed": 2179.5529131889343
+  },
+  {
+   "step": 2000,
+   "val_loss": 3.5467091248083435,
+   "val_acc": 0.10573826009111821,
+   "train_loss": 3.4097669367851218,
+   "lr": 0.5641379310344828,
+   "elapsed": 2473.3300120830536
+  },
+  {
+   "step": 2250,
+   "val_loss": 3.3247227441518277,
+   "val_acc": 0.14029834213927733,
+   "train_loss": 3.418257016429269,
+   "lr": 0.5313793103448277,
+   "elapsed": 2745.0072753429413
+  },
+  {
+   "step": 2500,
+   "val_loss": 3.2796712297419237,
+   "val_acc": 0.16953523958190406,
+   "train_loss": 3.3973037458625166,
+   "lr": 0.4986206896551725,
+   "elapsed": 3012.157470703125
+  },
+  {
+   "step": 2750,
+   "val_loss": 3.4068475181237097,
+   "val_acc": 0.09593441562613596,
+   "train_loss": 3.3735321560300324,
+   "lr": 0.4658620689655173,
+   "elapsed": 3266.5382063388824
+  },
+  {
+   "step": 3000,
+   "val_loss": 3.3881479381661297,
+   "val_acc": 0.10603721436696233,
+   "train_loss": 3.343904423414267,
+   "lr": 0.43310344827586217,
+   "elapsed": 3513.1940128803253
+  },
+  {
+   "step": 3250,
+   "val_loss": 3.270245135382796,
+   "val_acc": 0.16619487970568106,
+   "train_loss": 3.2904910499829034,
+   "lr": 0.400344827586207,
+   "elapsed": 3658.1384587287903
+  },
+  {
+   "step": 3500,
+   "val_loss": 3.322075049066117,
+   "val_acc": 0.17960732533137483,
+   "train_loss": 3.318816540953545,
+   "lr": 0.36758620689655175,
+   "elapsed": 3782.029019355774
+  },
+  {
+   "step": 3750,
+   "val_loss": 3.2931418269821484,
+   "val_acc": 0.17419295194620024,
+   "train_loss": 3.2887153589619693,
+   "lr": 0.3348275862068967,
+   "elapsed": 3904.8962454795837
+  },
+  {
+   "step": 4000,
+   "val_loss": 3.272767766626116,
+   "val_acc": 0.17531022114418726,
+   "train_loss": 3.2915282005103648,
+   "lr": 0.30206896551724144,
+   "elapsed": 4014.179911851883
+  },
+  {
+   "step": 4250,
+   "val_loss": 3.246100989047026,
+   "val_acc": 0.17603318057394288,
+   "train_loss": 3.28316508750398,
+   "lr": 0.26931034482758626,
+   "elapsed": 4117.6020793914795
+  },
+  {
+   "step": 4500,
+   "val_loss": 3.2549146819839208,
+   "val_acc": 0.17899680066503795,
+   "train_loss": 3.2763559971610596,
+   "lr": 0.23655172413793102,
+   "elapsed": 4220.675750255585
+  },
+  {
+   "step": 4750,
+   "val_loss": 3.2789532240917834,
+   "val_acc": 0.12896389213119763,
+   "train_loss": 3.2764411299302716,
+   "lr": 0.20379310344827595,
+   "elapsed": 4322.738105773926
+  },
+  {
+   "step": 5000,
+   "val_loss": 3.265605924442569,
+   "val_acc": 0.18057199321064232,
+   "train_loss": 3.245873951752969,
+   "lr": 0.17103448275862076,
+   "elapsed": 4425.151166200638
+  },
+  {
+   "step": 5250,
+   "val_loss": 3.2607302967542418,
+   "val_acc": 0.17973741632056572,
+   "train_loss": 3.2289889815579165,
+   "lr": 0.13827586206896553,
+   "elapsed": 4527.936383962631
+  },
+  {
+   "step": 5500,
+   "val_loss": 3.2293652054667077,
+   "val_acc": 0.17532392487332138,
+   "train_loss": 3.22702393921682,
+   "lr": 0.10551724137931036,
+   "elapsed": 4631.63497877121
+  },
+  {
+   "step": 5750,
+   "val_loss": 3.193160435894969,
+   "val_acc": 0.18735187474051815,
+   "train_loss": 3.1997497772893744,
+   "lr": 0.0727586206896552,
+   "elapsed": 4734.05660367012
+  },
+  {
+   "step": 5999,
+   "val_loss": 3.1802735177569716,
+   "val_acc": 0.19541378984249394,
+   "train_loss": 3.175868034455837,
+   "lr": 0.040131034482758655,
+   "elapsed": 4818.298639297485,
+   "final": true
+  }
+ ],
+ "extrapolation": {
+  "96": {
+   "val_loss": 3.225081138928625,
+   "val_acc": 0.18333124582424623
+  },
+  "192": {
+   "val_loss": 3.164365498187633,
+   "val_acc": 0.18506948296158554
+  },
+  "384": {
+   "val_loss": 3.2588791920220346,
+   "val_acc": 0.18694228880919153
+  },
+  "768": {
+   "val_loss": 3.238021071661058,
+   "val_acc": 0.19092546567665367
+  }
+ },
+ "cloze": [
+  {
+   "context": "u?is, s?r, wa? Cart?age.\n\n",
+   "pos_in_window": 1,
+   "target": "n",
+   "pred": " "
+  },
+  {
+   "context": "u?is, s?r, wa? Cart?age.\n\nADRIAN",
+   "pos_in_window": 7,
+   "target": "i",
+   "pred": " "
+  },
+  {
+   "context": "u?is, s?r, wa? Cart?age.\n\nADRIAN:\nCart",
+   "pos_in_window": 13,
+   "target": "s",
+   "pred": " "
+  },
+  {
+   "context": "u?is, s?r, wa? Cart?age.\n\nADRIAN:\nCarthage?\n",
+   "pos_in_window": 19,
+   "target": "h",
+   "pred": " "
+  },
+  {
+   "context": "e us a?l!?\nVIN?EN?IO:\nW?ere is ",
+   "pos_in_window": 6,
+   "target": "l",
+   "pred": " "
+  },
+  {
+   "context": "e us a?l!?\nVIN?EN?IO:\nW?ere is tha",
+   "pos_in_window": 9,
+   "target": "\n",
+   "pred": " "
+  },
+  {
+   "context": "e us a?l!?\nVIN?EN?IO:\nW?ere is that dam",
+   "pos_in_window": 14,
+   "target": "C",
+   "pred": " "
+  },
+  {
+   "context": "e us a?l!?\nVIN?EN?IO:\nW?ere is that damn?d",
+   "pos_in_window": 17,
+   "target": "T",
+   "pred": " "
+  },
+  {
+   "context": "fir?,\nFetch?in our wood and ",
+   "pos_in_window": 3,
+   "target": "e",
+   "pred": " "
+  },
+  {
+   "context": "fir?,\nFetch?in our wood and s?rves ?",
+   "pos_in_window": 11,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "fir?,\nFetch?in our wood and s?rves ?n off",
+   "pos_in_window": 16,
+   "target": "u",
+   "pred": "t"
+  },
+  {
+   "context": "ir?,\nFetch?in our wood and s?rves ?n offices\n:hat",
+   "pos_in_window": 24,
+   "target": "n",
+   "pred": " "
+  },
+  {
+   "context": "e?f?ctio? ?overn, sir,\nTo ",
+   "pos_in_window": 1,
+   "target": "r",
+   "pred": " "
+  },
+  {
+   "context": "e?f?ctio? ?overn, sir,\nTo ex",
+   "pos_in_window": 3,
+   "target": "e",
+   "pred": " "
+  },
+  {
+   "context": "e?f?ctio? ?overn, sir,\nTo excel ?",
+   "pos_in_window": 8,
+   "target": "n",
+   "pred": " "
+  },
+  {
+   "context": "e?f?ctio? ?overn, sir,\nTo excel ?he",
+   "pos_in_window": 10,
+   "target": "g",
+   "pred": " "
+  },
+  {
+   "context": "way?\nWelcome! o?e mess is lik? to be?you",
+   "pos_in_window": 15,
+   "target": "n",
+   "pred": " "
+  },
+  {
+   "context": "Welcome! o?e mess is lik? to be?your cheer?\nCome,",
+   "pos_in_window": 24,
+   "target": "e",
+   "pred": " "
+  },
+  {
+   "context": "! o?e mess is lik? to be?your cheer?\nCome, s?r; w",
+   "pos_in_window": 24,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "is lik? to be?your cheer?\nCome, s?r; we will bett",
+   "pos_in_window": 24,
+   "target": ":",
+   "pred": " "
+  },
+  {
+   "context": "Spoke l?ke an offi?e?; hS' to th",
+   "pos_in_window": 7,
+   "target": "i",
+   "pred": " "
+  },
+  {
+   "context": "Spoke l?ke an offi?e?; hS' to the?,",
+   "pos_in_window": 10,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "Spoke l?ke an offi?e?; hS' to the?, ?ad!\n\nB",
+   "pos_in_window": 18,
+   "target": "c",
+   "pred": " "
+  },
+  {
+   "context": "Spoke l?ke an offi?e?; hS' to the?, ?ad!\n\nBAP",
+   "pos_in_window": 20,
+   "target": "r",
+   "pred": " "
+  }
+ ],
+ "meta": {
+  "tag": "attn_T96_d96_L3_s0",
+  "mix": "attn",
+  "T": 96,
+  "d": 96,
+  "L": 3,
+  "F": 384,
+  "steps": 6000,
+  "params": 342048,
+  "mix_params": 111744,
+  "vocab": 66,
+  "seconds": 4829.422378778458,
+  "args": {
+   "mix": "attn",
+   "data": "D:\\dsh\\work\\eiss\\experiments\\spectral-mlm-cpu\\tinyshakespeare.txt",
+   "outdir": "D:\\dsh\\work\\scaleup\\runs\\main",
+   "steps": 6000,
+   "T": 96,
+   "t_max": 768,
+   "d": 96,
+   "L": 3,
+   "F": 384,
+   "heads": 4,
+   "batch": 24,
+   "eval_batch": 8,
+   "extrap_batch": 4,
+   "eval_every": 250,
+   "eval_batches": 12,
+   "lr": 0.8,
+   "momentum": 0.9,
+   "clip": 1.0,
+   "warmup": 200,
+   "mask_prob": 0.15,
+   "pos": "sin",
+   "seed": 0,
+   "wo_zero": false,
+   "gradcheck": false,
+   "extrapolate": [
+    96,
+    192,
+    384,
+    768
+   ],
+   "save_weights": false
+  }
+ }
+}

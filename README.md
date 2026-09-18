@@ -87,6 +87,56 @@
 
 ---
 
+## 实验二：把实验一放大 100×（已完成）
+
+**问题**：实验一的结论是在 1.1 MB 语料、0.45 M 参数上得到的。把规模放大 100 倍之后，
+判据 2（可扩展）能不能撑住？"模型自发塌成局部模板"（判据 6）会不会被规模推翻？
+
+**做法**：语料换成 **100 MB enwik8**（byte 级，词表 206），训练量放大到每格 **41 M token**，
+d/L/T 从 96/3/96 放大到 **384/6/512**（spectral 臂 9.54 M 参数）。新增一个
+**严格局部**的 `stencil` 臂（循环卷积，|lag| ≤ 2，仅 11,520 个混合参数），
+它同时是谱算子的严格局部子集——于是"局部核 vs 全局核"第一次成为受控比较。
+为在不放弃"不用 autograd/GPU"这条约束的前提下放大，写了一个 PyTorch 移植版，
+并用实验一自己的代码做逐参数梯度等价性检验（`global_rel` ≤ 2.2e-14）。
+
+**结果**：
+
+| 规模（enwik8, 41 M token） | stencil | spectral | attn | fnet |
+|---|---|---|---|---|
+| s1 (d96,L3,T128) | **1.0871 / 0.684** | 1.2243 / 0.652 | 3.1802 / 0.203（崩溃） | 2.3025 / 0.384 |
+| s2 (d192,L4,T256) | 0.9958 / 0.723 | 1.1439 / 0.676 | **0.9395 / 0.736** | 2.2326 / 0.407 |
+| s3 (d384,L6,T512) | **0.8263 / 0.768** | 1.0914 / 0.688 | 3.5 → 2.217 → 3.351（双峰崩溃） | 2.2864 / 0.375 |
+| s3, attn lr0.2 对照 | — | — | **0.9218 / 0.738** | — |
+
+**四条结论**：
+
+1. **局部碾压全局，而且规模越大差距越大**：严格局部的 stencil 在每一个规模上都打败
+   参数多 100 倍的全局谱算子（s3：0.8263 vs 1.0914，混合参数 11,520 vs 1,184,256）。
+   这是开放问题 **Q2** 的强化版答案——不只是追平，是碾压。
+2. **"谱算子比注意力稳健"在放大后反转，而且非单调**：s1 崩、s2 稳、s3（lr0.8）再崩，
+   s3 只要把 lr 降到 0.2 就稳定在 0.9218。**双峰崩溃不是注意力的固有属性，而是
+   "lr 没跟着规模调"的症状** —— 这是 **Q7** 的答案。
+3. **核随规模变得更局部**：s1 lag0=0.79 → s3 lag0=0.99，峰值 lag 恒为 1，lag>8 < 0.2%。
+   参数化允许 512 长度的全局 all-to-all 卷积，模型买的仍然是 ±1…±2 的窗口。
+4. **判据 6 被一个干净的实验证实（本仓库最重要的一条）**：把任务要求的 lag 从 4 换成 64，
+   谱核三层**全部精确长到 lag 64**（acc 84.8%，掩码上限 ≈85.5%），注意力在 lr=0.4 时
+   达到 85.2%（第 0 层调成近似 one-hot 的"回看 64"头），而**严格局部的 stencil 结构性失败**。
+   **决定"用不用长程"的是任务，不是算子。**
+
+另外发现**实验一的手推反向传播里有一个真实的 bug**：LayerNorm 增益**前**的激活被当成
+增益**后**的激活去算 MLP 第一层权重梯度；实验一的 `--gradcheck` 只在初始化点跑有限差分，
+而该点 `g=1, b=0` 使 `bb ≡ xh`，bug 恰好不可见。四重独立证据（含中心差分：误差 4.1e-08
+对差分噪声 8.0e-11）钉死了它。在放大尺度上该 bug 的影响（0.018 nats）**小于跑次噪声
+（0.06 nats）**，所以它是方法论教训，不是会毁掉实验一结论的缺陷。
+
+> **总判断没有变，而且更硬了**：把规模放大 100 倍，买到的是**更好的局部模板，不是涌现**。
+> 谱算子直到最大的 s3（1.0914）**仍然没有越过**"看得见 ±2 邻居的计数表"（1.0666）。
+
+完整数据、核分析、长度外推、跑次噪声分析见
+[`docs/06-experiment-2-scaleup-report.md`](docs/06-experiment-2-scaleup-report.md)。
+
+---
+
 ## 仓库结构
 
 ```
@@ -97,12 +147,20 @@ docs/                                讨论与实验文档
   03-experiment-report.md            实验一完整报告
   04-experiment-design.md            实验一设计文档（架构、约束、复现）
   05-findings-and-open-questions.md  反直觉发现与下一步实验清单
+  06-experiment-2-scaleup-report.md  实验二完整报告（100× 放大 + Q1/Q2/Q3/Q7）
 experiments/
   spectral-mlm-cpu/                  实验一代码（纯 NumPy，无 autograd）
     spectral_bert.py                 模型 + 手推反向传播 + SGD + MLM 训练
     debug_grad.py                    按参数组定位梯度错误的诊断脚本
     aggregate.py / plot.py           汇总与出图
     results/                         原始曲线、外推、cloze、对比图
+  spectral-mlm-scaleup/              实验二代码（PyTorch GPU 移植 + 100× 放大）
+    scripts/spectral_lm_torch.py     移植版：逐项保持实验一的骨架/目标/优化器
+    scripts/run_stage*.py            Stage A 忠实复现 / Stage C ladder / Stage D 长程任务
+    scripts/run_equiv.py             与实验一的逐参数梯度等价性检验
+    scripts/check_ln_bug.py          用中心差分钉死实验一的 W1 梯度 bug
+    scripts/verify_claims.py         从原始 run 文件复算报告里的 78 个数字
+    runs/ logs/ figures/ ref/        原始运行数据、stdout、图、等价性参考 dump
 ```
 
 ## 复现实验一
@@ -114,6 +172,21 @@ bash run_main.sh 0 6000                       # 三臂主实验
 bash run_followup.sh                          # 稳健性对照（零初始化 / seed1 / lr0.2）
 python3 aggregate.py "results/main/*.final.json"
 python3 plot.py
+```
+
+## 复现实验二
+
+需要 PyTorch（GPU）跑 Stage B/C/D；Stage A 用实验一原始 NumPy 代码。
+
+```bash
+cd experiments/spectral-mlm-scaleup
+python scripts/run_stageA.py main followup     # Stage A：原始规模的忠实复现（CPU）
+python scripts/run_equiv.py                    # Stage B：数值等价性 10/10 PASS
+python scripts/check_ln_bug.py                 # Stage B：有限差分钉死实验一的 bug
+python scripts/run_stageC.py ladder            # Stage C：s1/s2/s3 × 4 臂
+python scripts/run_stageD.py                   # Stage D：长程合成任务
+python scripts/plot.py                         # 出图
+python scripts/verify_claims.py                # 复算报告里的 78 个数字
 ```
 
 ## 如何参与

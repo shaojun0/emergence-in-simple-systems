@@ -1,0 +1,15 @@
+== run attn_T96_d96_L3_s0_wozero | vocab=66 | params=342048 (mix=111744, 32.7%) | threads=1
+[attn_T96_d96_L3_s0_wozero] step     0  train 0.0000  val 4.1740  acc 0.0345  (1s)
+[attn_T96_d96_L3_s0_wozero] step   250  train 3.3827  val 3.3454  acc 0.1609  (306s)
+[attn_T96_d96_L3_s0_wozero] step   500  train 3.2993  val 3.0828  acc 0.1858  (621s)
+[attn_T96_d96_L3_s0_wozero] step   750  train 2.9751  val 2.7306  acc 0.2369  (934s)
+[attn_T96_d96_L3_s0_wozero] step  1000  train 2.5500  val 2.2353  acc 0.3706  (1247s)
+[attn_T96_d96_L3_s0_wozero] step  1250  train 2.2379  val 2.0795  acc 0.4238  (1551s)
+[attn_T96_d96_L3_s0_wozero] step  1500  train 2.1191  val 1.9589  acc 0.4430  (1853s)
+[attn_T96_d96_L3_s0_wozero] step  1750  train 1.9987  val 1.9263  acc 0.4614  (2160s)
+[attn_T96_d96_L3_s0_wozero] step  2000  train 1.8964  val 1.8035  acc 0.4808  (2453s)
+[attn_T96_d96_L3_s0_wozero] step  2250  train 1.8124  val 1.7043  acc 0.4851  (2718s)
+[attn_T96_d96_L3_s0_wozero] step  2500  train 1.7426  val 1.6968  acc 0.5030  (2981s)
+[attn_T96_d96_L3_s0_wozero] step  2750  train 1.6698  val 1.6038  acc 0.5276  (3231s)
+[attn_T96_d96_L3_s0_wozero] step  2999 (final) train 1.5969  val 1.5642  acc 0.5517  (3484s)
+[attn_T96_d96_L3_s0_wozero] done in 3484s; best val 1.5642

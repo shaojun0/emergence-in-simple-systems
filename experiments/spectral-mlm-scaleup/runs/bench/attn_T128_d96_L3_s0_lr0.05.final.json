@@ -1,0 +1,255 @@
+{
+ "history": [
+  {
+   "step": 0,
+   "val_loss": 5.389857292175293,
+   "val_acc": 0.0,
+   "train_loss": 0.0,
+   "lr": 0.005,
+   "elapsed": 0.8734500408172607
+  },
+  {
+   "step": 20,
+   "val_loss": 3.734909772872925,
+   "val_acc": 0.15717948717948718,
+   "train_loss": 4.330286884307862,
+   "lr": 0.03416666666666667,
+   "elapsed": 2.0075104236602783
+  },
+  {
+   "step": 39,
+   "val_loss": 3.663547396659851,
+   "val_acc": 0.15717948717948718,
+   "train_loss": 3.663273334503174,
+   "lr": 0.004083333333333334,
+   "elapsed": 2.9927945137023926,
+   "final": true
+  }
+ ],
+ "diagnostics": {
+  "attention": [
+   {
+    "entropy": 4.579987049102783,
+    "mean_distance": 45.446533203125,
+    "max_weight": 0.032467130571603775,
+    "uniform_distance": 42.666666666666664
+   },
+   {
+    "entropy": 4.759809494018555,
+    "mean_distance": 42.444000244140625,
+    "max_weight": 0.02008223719894886,
+    "uniform_distance": 42.666666666666664
+   },
+   {
+    "entropy": 4.831960678100586,
+    "mean_distance": 42.81553268432617,
+    "max_weight": 0.011856666766107082,
+    "uniform_distance": 42.666666666666664
+   }
+  ]
+ },
+ "cloze": [
+  {
+   "context": "ruited because it w???pro?hesied ?he ?a? co?",
+   "pos_in_window": 19,
+   "target": "a",
+   "pred": " "
+  },
+  {
+   "context": "ruited because it w???pro?hesied ?he ?a? co??",
+   "pos_in_window": 20,
+   "target": "s",
+   "pred": " "
+  },
+  {
+   "context": "ruited because it w???pro?hesied ?he ?a? co??d",
+   "pos_in_window": 21,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "uited because it w???pro?hesied ?he ?a? co??d not",
+   "pos_in_window": 24,
+   "target": "p",
+   "pred": " "
+  },
+  {
+   "context": "n? the ?e?ort in th? journ",
+   "pos_in_window": 1,
+   "target": "g",
+   "pred": " "
+  },
+  {
+   "context": "n? the ?e?ort in th? journal [?S",
+   "pos_in_window": 7,
+   "target": "r",
+   "pred": " "
+  },
+  {
+   "context": "n? the ?e?ort in th? journal [?Sci",
+   "pos_in_window": 9,
+   "target": "p",
+   "pred": " "
+  },
+  {
+   "context": "n? the ?e?ort in th? journal [?Scienc? ?Rour",
+   "pos_in_window": 19,
+   "target": "e",
+   "pred": " "
+  },
+  {
+   "context": "s where one p?rent is ?ither absent ?r",
+   "pos_in_window": 13,
+   "target": "a",
+   "pred": " "
+  },
+  {
+   "context": "s where one p?rent is ?ither absent ?ro? the ho",
+   "pos_in_window": 22,
+   "target": "e",
+   "pred": " "
+  },
+  {
+   "context": "p?rent is ?ither absent ?ro? the hou?ehold or emo",
+   "pos_in_window": 24,
+   "target": "f",
+   "pred": " "
+  },
+  {
+   "context": "ent is ?ither absent ?ro? the hou?ehold or emotio",
+   "pos_in_window": 24,
+   "target": "m",
+   "pred": " "
+  },
+  {
+   "context": "nal trade topics]]\n\n?[C?tegory:Inte?na?ional ",
+   "pos_in_window": 20,
+   "target": "[",
+   "pred": " "
+  },
+  {
+   "context": "nal trade topics]]\n\n?[C?tegory:Inte?na?ional org",
+   "pos_in_window": 23,
+   "target": "a",
+   "pred": " "
+  },
+  {
+   "context": "opics]]\n\n?[C?tegory:Inte?na?ional organ?zations|*",
+   "pos_in_window": 24,
+   "target": "r",
+   "pred": " "
+  },
+  {
+   "context": "cs]]\n\n?[C?tegory:Inte?na?ional organ?zations|*]?\n",
+   "pos_in_window": 24,
+   "target": "t",
+   "pred": " "
+  },
+  {
+   "context": "rucial D??ade: American Foreign R",
+   "pos_in_window": 8,
+   "target": "e",
+   "pred": " "
+  },
+  {
+   "context": "rucial D??ade: American Foreign Re",
+   "pos_in_window": 9,
+   "target": "c",
+   "pred": " "
+  },
+  {
+   "context": "rucial D??ade: American Foreign Relation? ",
+   "pos_in_window": 17,
+   "target": "e",
+   "pred": " "
+  },
+  {
+   "context": "merican Foreign Relation? during t?e ?960s''?(199",
+   "pos_in_window": 24,
+   "target": "s",
+   "pred": " "
+  },
+  {
+   "context": "oups ''a??epts'' theirare?orts.\n*",
+   "pos_in_window": 8,
+   "target": "c",
+   "pred": " "
+  },
+  {
+   "context": "oups ''a??epts'' theirare?orts.\n**",
+   "pos_in_window": 9,
+   "target": "c",
+   "pred": " "
+  },
+  {
+   "context": "oups ''a??epts'' theirare?orts.\n** Tas? F?rce ?",
+   "pos_in_window": 22,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "ups ''a??epts'' theirare?orts.\n** Tas? F?rce ??po",
+   "pos_in_window": 24,
+   "target": "p",
+   "pred": " "
+  }
+ ],
+ "meta": {
+  "tag": "attn_T128_d96_L3_s0_lr0.05",
+  "mix": "attn",
+  "T": 128,
+  "d": 96,
+  "L": 3,
+  "F": 384,
+  "steps": 40,
+  "params": 355488,
+  "mix_params": 111744,
+  "active_mix": 111744,
+  "vocab": 206,
+  "corpus_bytes": 100000000,
+  "tokens_per_step": 4096,
+  "seconds": 3.105292320251465,
+  "device": "cuda",
+  "dtype": "float32",
+  "args": {
+   "mix": "attn",
+   "data": "D:\\dsh\\work\\data\\enwik8",
+   "encoding": "latin-1",
+   "val_frac": 0.05,
+   "outdir": "D:\\dsh\\work\\scaleup\\runs\\bench",
+   "tag": "",
+   "device": "cuda",
+   "dtype": "float32",
+   "tf32": false,
+   "steps": 40,
+   "T": 128,
+   "t_max": 768,
+   "d": 96,
+   "L": 3,
+   "F": 384,
+   "heads": 4,
+   "stencil_k": 2,
+   "batch": 32,
+   "grad_accum": 1,
+   "eval_batch": 4,
+   "extrap_batch": 4,
+   "eval_every": 20,
+   "eval_batches": 2,
+   "lr": 0.05,
+   "momentum": 0.9,
+   "clip": 1.0,
+   "warmup": 10,
+   "mask_prob": 0.15,
+   "pos": "sin",
+   "seed": 0,
+   "wo_zero": false,
+   "extrapolate": [],
+   "save_weights": false,
+   "save_every": 0,
+   "resume": false,
+   "equiv_npz": null,
+   "equiv_bug": "upstream",
+   "upstream_bug": false
+  }
+ }
+}

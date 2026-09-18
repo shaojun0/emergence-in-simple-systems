@@ -1,0 +1,15 @@
+== run spectral_T96_d96_L3_s1 | vocab=66 | params=452064 (mix=221760, 49.1%) | threads=1
+[spectral_T96_d96_L3_s1] step     0  train 0.0000  val 4.2504  acc 0.0131  (1s)
+[spectral_T96_d96_L3_s1] step   250  train 3.2504  val 2.6737  acc 0.2825  (196s)
+[spectral_T96_d96_L3_s1] step   500  train 2.4860  val 2.2032  acc 0.3827  (395s)
+[spectral_T96_d96_L3_s1] step   750  train 2.2343  val 1.9551  acc 0.4434  (601s)
+[spectral_T96_d96_L3_s1] step  1000  train 2.0315  val 1.9058  acc 0.4411  (797s)
+[spectral_T96_d96_L3_s1] step  1250  train 1.8836  val 1.7110  acc 0.5163  (1005s)
+[spectral_T96_d96_L3_s1] step  1500  train 1.7883  val 1.6560  acc 0.5179  (1207s)
+[spectral_T96_d96_L3_s1] step  1750  train 1.7061  val 1.5901  acc 0.5405  (1404s)
+[spectral_T96_d96_L3_s1] step  2000  train 1.6356  val 1.5576  acc 0.5586  (1599s)
+[spectral_T96_d96_L3_s1] step  2250  train 1.5645  val 1.5145  acc 0.5617  (1792s)
+[spectral_T96_d96_L3_s1] step  2500  train 1.5120  val 1.4514  acc 0.5685  (1992s)
+[spectral_T96_d96_L3_s1] step  2750  train 1.4520  val 1.4007  acc 0.6020  (2189s)
+[spectral_T96_d96_L3_s1] step  2999 (final) train 1.4029  val 1.3762  acc 0.6019  (2386s)
+[spectral_T96_d96_L3_s1] done in 2386s; best val 1.3762

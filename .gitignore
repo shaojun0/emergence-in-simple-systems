@@ -1,8 +1,17 @@
 __pycache__/
 *.pyc
-*.weights.npz        # 3.6MB model weights; regenerate via --save_weights
+# Model weights (3.6MB for experiment 1, up to 45MB for experiment 2);
+# regenerate with --save_weights.
+# NOTE: keep this pattern on its own line -- a trailing "#..." comment is NOT
+# a comment in .gitignore syntax, it becomes part of the pattern and silently
+# disables it.
+*.weights.npz
 logs/
 runs/
 !experiments/*/results/
+# Experiment 2 keeps its raw run files and stdout logs under version control:
+# verify_claims.py re-derives all 78 numbers quoted in the report from them.
+!experiments/spectral-mlm-scaleup/runs/
+!experiments/spectral-mlm-scaleup/logs/
 *.tmp
 .DS_Store

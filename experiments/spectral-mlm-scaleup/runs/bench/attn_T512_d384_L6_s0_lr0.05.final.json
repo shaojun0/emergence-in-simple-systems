@@ -1,0 +1,273 @@
+{
+ "history": [
+  {
+   "step": 0,
+   "val_loss": 5.368032217025757,
+   "val_acc": 0.0049583998655349185,
+   "train_loss": 0.0,
+   "lr": 0.005,
+   "elapsed": 0.8109972476959229
+  },
+  {
+   "step": 20,
+   "val_loss": 3.705231785774231,
+   "val_acc": 0.11100722749810908,
+   "train_loss": 4.136765706539154,
+   "lr": 0.03416666666666667,
+   "elapsed": 5.438915252685547
+  },
+  {
+   "step": 39,
+   "val_loss": 3.6325035095214844,
+   "val_acc": 0.11714219682326246,
+   "train_loss": 3.5678204774856566,
+   "lr": 0.004083333333333334,
+   "elapsed": 9.82866907119751,
+   "final": true
+  }
+ ],
+ "diagnostics": {
+  "attention": [
+   {
+    "entropy": 5.881398677825928,
+    "mean_distance": 181.19833374023438,
+    "max_weight": 0.014736681245267391,
+    "uniform_distance": 170.66666666666666
+   },
+   {
+    "entropy": 6.125445365905762,
+    "mean_distance": 168.5186767578125,
+    "max_weight": 0.006222023628652096,
+    "uniform_distance": 170.66666666666666
+   },
+   {
+    "entropy": 6.204794883728027,
+    "mean_distance": 169.6539764404297,
+    "max_weight": 0.0036939787678420544,
+    "uniform_distance": 170.66666666666666
+   },
+   {
+    "entropy": 6.220709800720215,
+    "mean_distance": 171.0111083984375,
+    "max_weight": 0.0031157764606177807,
+    "uniform_distance": 170.66666666666666
+   },
+   {
+    "entropy": 6.225311279296875,
+    "mean_distance": 171.29263305664062,
+    "max_weight": 0.0029295352287590504,
+    "uniform_distance": 170.66666666666666
+   },
+   {
+    "entropy": 6.229485988616943,
+    "mean_distance": 170.21685791015625,
+    "max_weight": 0.002681075595319271,
+    "uniform_distance": 170.66666666666666
+   }
+  ]
+ },
+ "cloze": [
+  {
+   "context": "mal architecture, b???nes? and sc?ent?f?c)\n?",
+   "pos_in_window": 19,
+   "target": "u",
+   "pred": " "
+  },
+  {
+   "context": "mal architecture, b???nes? and sc?ent?f?c)\n??",
+   "pos_in_window": 20,
+   "target": "s",
+   "pred": " "
+  },
+  {
+   "context": "mal architecture, b???nes? and sc?ent?f?c)\n??[",
+   "pos_in_window": 21,
+   "target": "i",
+   "pred": " "
+  },
+  {
+   "context": "al architecture, b???nes? and sc?ent?f?c)\n??[IBM ",
+   "pos_in_window": 24,
+   "target": "s",
+   "pred": " "
+  },
+  {
+   "context": "\u00c4\u00bd]]||st??e=&quot;background-colo",
+   "pos_in_window": 8,
+   "target": "y",
+   "pred": " "
+  },
+  {
+   "context": "\u00c4\u00bd]]||st??e=&quot;background-color",
+   "pos_in_window": 9,
+   "target": "l",
+   "pred": " "
+  },
+  {
+   "context": "\u00c4\u00bd]]||st??e=&quot;background-color:#ccff?c",
+   "pos_in_window": 17,
+   "target": ";",
+   "pred": " "
+  },
+  {
+   "context": "t;background-color:#ccff?c;&quot;|?am?;nbsp;?|[[\u00c4",
+   "pos_in_window": 24,
+   "target": "c",
+   "pred": " "
+  },
+  {
+   "context": "?ell?lar level ?f th? blo",
+   "pos_in_window": 0,
+   "target": "c",
+   "pred": " "
+  },
+  {
+   "context": "?ell?lar level ?f th? blood a",
+   "pos_in_window": 4,
+   "target": "u",
+   "pred": " "
+  },
+  {
+   "context": "?ell?lar level ?f th? blood an? tiss?es.",
+   "pos_in_window": 15,
+   "target": "o",
+   "pred": " "
+  },
+  {
+   "context": "?ell?lar level ?f th? blood an? tiss?es. The ",
+   "pos_in_window": 20,
+   "target": "e",
+   "pred": " "
+  },
+  {
+   "context": "entists to?a?sociate in internation",
+   "pos_in_window": 10,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "entists to?a?sociate in internationa?",
+   "pos_in_window": 12,
+   "target": "s",
+   "pred": " "
+  },
+  {
+   "context": "entists to?a?sociate in internationa??scient?fic",
+   "pos_in_window": 23,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "ists to?a?sociate in internationa??scient?fic act",
+   "pos_in_window": 24,
+   "target": "e",
+   "pred": " "
+  },
+  {
+   "context": "s ?re doomed, ??detailed ac",
+   "pos_in_window": 2,
+   "target": "a",
+   "pred": " "
+  },
+  {
+   "context": "s ?re doomed, ??detailed account o? t?e",
+   "pos_in_window": 14,
+   "target": "a",
+   "pred": " "
+  },
+  {
+   "context": "s ?re doomed, ??detailed account o? t?e ",
+   "pos_in_window": 15,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "ed, ??detailed account o? t?e fall of Tro? is not",
+   "pos_in_window": 24,
+   "target": "f",
+   "pred": " "
+  },
+  {
+   "context": "?conveKsion</??mment>\n   ",
+   "pos_in_window": 0,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "?conveKsion</??mment>\n   ?? <te",
+   "pos_in_window": 6,
+   "target": "r",
+   "pred": " "
+  },
+  {
+   "context": "?conveKsion</??mment>\n   ?? <te?t xml:",
+   "pos_in_window": 13,
+   "target": "c",
+   "pred": " "
+  },
+  {
+   "context": "?conveKsion</??mment>\n   ?? <te?t xml:s",
+   "pos_in_window": 14,
+   "target": "o",
+   "pred": " "
+  }
+ ],
+ "meta": {
+  "tag": "attn_T512_d384_L6_s0_lr0.05",
+  "mix": "attn",
+  "T": 512,
+  "d": 384,
+  "L": 6,
+  "F": 1536,
+  "steps": 40,
+  "params": 10726656,
+  "mix_params": 3548160,
+  "active_mix": 3548160,
+  "vocab": 206,
+  "corpus_bytes": 100000000,
+  "tokens_per_step": 4096,
+  "seconds": 10.186692714691162,
+  "device": "cuda",
+  "dtype": "float32",
+  "args": {
+   "mix": "attn",
+   "data": "D:\\dsh\\work\\data\\enwik8",
+   "encoding": "latin-1",
+   "val_frac": 0.05,
+   "outdir": "D:\\dsh\\work\\scaleup\\runs\\bench",
+   "tag": "",
+   "device": "cuda",
+   "dtype": "float32",
+   "tf32": false,
+   "steps": 40,
+   "T": 512,
+   "t_max": 768,
+   "d": 384,
+   "L": 6,
+   "F": 1536,
+   "heads": 6,
+   "stencil_k": 2,
+   "batch": 8,
+   "grad_accum": 1,
+   "eval_batch": 4,
+   "extrap_batch": 4,
+   "eval_every": 20,
+   "eval_batches": 2,
+   "lr": 0.05,
+   "momentum": 0.9,
+   "clip": 1.0,
+   "warmup": 10,
+   "mask_prob": 0.15,
+   "pos": "sin",
+   "seed": 0,
+   "wo_zero": false,
+   "extrapolate": [],
+   "save_weights": false,
+   "save_every": 0,
+   "resume": false,
+   "equiv_npz": null,
+   "equiv_bug": "upstream",
+   "upstream_bug": false
+  }
+ }
+}

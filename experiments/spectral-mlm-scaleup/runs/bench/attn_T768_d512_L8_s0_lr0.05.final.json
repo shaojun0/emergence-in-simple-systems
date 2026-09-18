@@ -1,0 +1,285 @@
+{
+ "history": [
+  {
+   "step": 0,
+   "val_loss": 5.425007581710815,
+   "val_acc": 0.0041982057751612,
+   "train_loss": 0.0,
+   "lr": 0.005,
+   "elapsed": 0.9427142143249512
+  },
+  {
+   "step": 20,
+   "val_loss": 3.9642701148986816,
+   "val_acc": 0.1260793383795907,
+   "train_loss": 4.18791800737381,
+   "lr": 0.03416666666666667,
+   "elapsed": 8.860714435577393
+  },
+  {
+   "step": 39,
+   "val_loss": 3.8713384866714478,
+   "val_acc": 0.13332632464255678,
+   "train_loss": 3.602473020553589,
+   "lr": 0.004083333333333334,
+   "elapsed": 16.5226092338562,
+   "final": true
+  }
+ ],
+ "diagnostics": {
+  "attention": [
+   {
+    "entropy": 6.308099746704102,
+    "mean_distance": 255.1417236328125,
+    "max_weight": 0.010354883968830109,
+    "uniform_distance": 256.0
+   },
+   {
+    "entropy": 6.522347927093506,
+    "mean_distance": 257.71075439453125,
+    "max_weight": 0.004916779231280088,
+    "uniform_distance": 256.0
+   },
+   {
+    "entropy": 6.606647491455078,
+    "mean_distance": 254.90158081054688,
+    "max_weight": 0.002611099509522319,
+    "uniform_distance": 256.0
+   },
+   {
+    "entropy": 6.625469207763672,
+    "mean_distance": 256.9579772949219,
+    "max_weight": 0.002265453338623047,
+    "uniform_distance": 256.0
+   },
+   {
+    "entropy": 6.629596710205078,
+    "mean_distance": 255.50711059570312,
+    "max_weight": 0.0020639721769839525,
+    "uniform_distance": 256.0
+   },
+   {
+    "entropy": 6.634242057800293,
+    "mean_distance": 255.58114624023438,
+    "max_weight": 0.0019390409579500556,
+    "uniform_distance": 256.0
+   },
+   {
+    "entropy": 6.636533260345459,
+    "mean_distance": 257.1024475097656,
+    "max_weight": 0.0018381262198090553,
+    "uniform_distance": 256.0
+   },
+   {
+    "entropy": 6.637658596038818,
+    "mean_distance": 256.4110107421875,
+    "max_weight": 0.0017703541088849306,
+    "uniform_distance": 256.0
+   }
+  ]
+ },
+ "cloze": [
+  {
+   "context": "gcolor=E9E8FF\n| Sch??? gr?des and?IQ ?|?0.5?",
+   "pos_in_window": 19,
+   "target": "o",
+   "pred": " "
+  },
+  {
+   "context": "gcolor=E9E8FF\n| Sch??? gr?des and?IQ ?|?0.5??",
+   "pos_in_window": 20,
+   "target": "o",
+   "pred": " "
+  },
+  {
+   "context": "gcolor=E9E8FF\n| Sch??? gr?des and?IQ ?|?0.5??-",
+   "pos_in_window": 21,
+   "target": "l",
+   "pred": " "
+  },
+  {
+   "context": "color=E9E8FF\n| Sch??? gr?des and?IQ ?|?0.5??- bgc",
+   "pos_in_window": 24,
+   "target": "a",
+   "pred": " "
+  },
+  {
+   "context": " climate?change, du? to our incom",
+   "pos_in_window": 8,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": " climate?change, du? to our incomplete under",
+   "pos_in_window": 19,
+   "target": "e",
+   "pred": " "
+  },
+  {
+   "context": " climate?change, du? to our incomplete understa",
+   "pos_in_window": 22,
+   "target": "o",
+   "pred": " "
+  },
+  {
+   "context": "limate?change, du? to our incomplete understa?din",
+   "pos_in_window": 24,
+   "target": "r",
+   "pred": " "
+  },
+  {
+   "context": "iota;&amp;?m?cron;&amp;sigmaf;, ''i",
+   "pos_in_window": 10,
+   "target": "o",
+   "pred": " "
+  },
+  {
+   "context": "iota;&amp;?m?cron;&amp;sigmaf;, ''id?",
+   "pos_in_window": 12,
+   "target": "i",
+   "pred": " "
+  },
+  {
+   "context": "iota;&amp;?m?cron;&amp;sigmaf;, ''id??s'', &?uot",
+   "pos_in_window": 23,
+   "target": "s",
+   "pred": " "
+  },
+  {
+   "context": "a;&amp;?m?cron;&amp;sigmaf;, ''id??s'', &?uot;pri",
+   "pos_in_window": 24,
+   "target": "a",
+   "pred": " "
+  },
+  {
+   "context": "m/histo?y??rticle?/arming_",
+   "pos_in_window": 1,
+   "target": "/",
+   "pred": " "
+  },
+  {
+   "context": "m/histo?y??rticle?/arming_iraq.p",
+   "pos_in_window": 7,
+   "target": "r",
+   "pred": " "
+  },
+  {
+   "context": "m/histo?y??rticle?/arming_iraq.php",
+   "pos_in_window": 9,
+   "target": "/",
+   "pred": " "
+  },
+  {
+   "context": "m/histo?y??rticle?/arming_iraq.php]",
+   "pos_in_window": 10,
+   "target": "a",
+   "pred": " "
+  },
+  {
+   "context": "?Z</tim?s_a?p?\n      <con",
+   "pos_in_window": 0,
+   "target": "5",
+   "pred": " "
+  },
+  {
+   "context": "?Z</tim?s_a?p?\n      <con?ributo",
+   "pos_in_window": 7,
+   "target": "e",
+   "pred": " "
+  },
+  {
+   "context": "?Z</tim?s_a?p?\n      <con?ributor>",
+   "pos_in_window": 9,
+   "target": "t",
+   "pred": " "
+  },
+  {
+   "context": "?Z</tim?s_a?p?\n      <con?ributor>\n ",
+   "pos_in_window": 11,
+   "target": "m",
+   "pred": " "
+  },
+  {
+   "context": "uot;\n!Ido!!English!!Italian!!French!tGerman!",
+   "pos_in_window": 19,
+   "target": "!",
+   "pred": " "
+  },
+  {
+   "context": "uot;\n!Ido!!English!!Italian!!French!tGerman!!Ru",
+   "pos_in_window": 22,
+   "target": "a",
+   "pred": " "
+  },
+  {
+   "context": "nglish!!Italian!!French!tGerman!!Russi?n?!?panish",
+   "pos_in_window": 24,
+   "target": "!",
+   "pred": " "
+  },
+  {
+   "context": "Italian!!French!tGerman!!Russi?n?!?panish\n?-\n|'?'",
+   "pos_in_window": 24,
+   "target": "!",
+   "pred": " "
+  }
+ ],
+ "meta": {
+  "tag": "attn_T768_d512_L8_s0_lr0.05",
+  "mix": "attn",
+  "T": 768,
+  "d": 512,
+  "L": 8,
+  "F": 2048,
+  "steps": 40,
+  "params": 25325568,
+  "mix_params": 8404992,
+  "active_mix": 8404992,
+  "vocab": 206,
+  "corpus_bytes": 100000000,
+  "tokens_per_step": 3072,
+  "seconds": 17.244277954101562,
+  "device": "cuda",
+  "dtype": "float32",
+  "args": {
+   "mix": "attn",
+   "data": "D:\\dsh\\work\\data\\enwik8",
+   "encoding": "latin-1",
+   "val_frac": 0.05,
+   "outdir": "D:\\dsh\\work\\scaleup\\runs\\bench",
+   "tag": "",
+   "device": "cuda",
+   "dtype": "float32",
+   "tf32": false,
+   "steps": 40,
+   "T": 768,
+   "t_max": 768,
+   "d": 512,
+   "L": 8,
+   "F": 2048,
+   "heads": 8,
+   "stencil_k": 2,
+   "batch": 4,
+   "grad_accum": 1,
+   "eval_batch": 4,
+   "extrap_batch": 4,
+   "eval_every": 20,
+   "eval_batches": 2,
+   "lr": 0.05,
+   "momentum": 0.9,
+   "clip": 1.0,
+   "warmup": 10,
+   "mask_prob": 0.15,
+   "pos": "sin",
+   "seed": 0,
+   "wo_zero": false,
+   "extrapolate": [],
+   "save_weights": false,
+   "save_every": 0,
+   "resume": false,
+   "equiv_npz": null,
+   "equiv_bug": "upstream",
+   "upstream_bug": false
+  }
+ }
+}

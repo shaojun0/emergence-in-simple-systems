@@ -1,0 +1,31 @@
+== run spectral_T96_d96_L3_s0 | vocab=66 | params=452064 (mix=221760, 49.1%) | threads=1
+[spectral_T96_d96_L3_s0] step     0  train 0.0000  val 4.2403  acc 0.0239  (1s)
+[spectral_T96_d96_L3_s0] step   250  train 3.2396  val 2.6337  acc 0.2689  (197s)
+[spectral_T96_d96_L3_s0] step   500  train 2.5020  val 2.3753  acc 0.3655  (397s)
+[spectral_T96_d96_L3_s0] step   750  train 2.2543  val 2.1303  acc 0.4051  (603s)
+[spectral_T96_d96_L3_s0] step  1000  train 2.0671  val 1.8721  acc 0.4784  (800s)
+[spectral_T96_d96_L3_s0] step  1250  train 1.9237  val 1.9035  acc 0.4696  (1009s)
+[spectral_T96_d96_L3_s0] step  1500  train 1.8249  val 1.7594  acc 0.4936  (1212s)
+[spectral_T96_d96_L3_s0] step  1750  train 1.7635  val 1.7197  acc 0.5093  (1410s)
+[spectral_T96_d96_L3_s0] step  2000  train 1.6944  val 1.6644  acc 0.5198  (1604s)
+[spectral_T96_d96_L3_s0] step  2250  train 1.6411  val 1.6509  acc 0.5268  (1798s)
+[spectral_T96_d96_L3_s0] step  2500  train 1.5973  val 1.5380  acc 0.5550  (1998s)
+[spectral_T96_d96_L3_s0] step  2750  train 1.5584  val 1.5378  acc 0.5700  (2196s)
+[spectral_T96_d96_L3_s0] step  3000  train 1.5200  val 1.4796  acc 0.5760  (2392s)
+[spectral_T96_d96_L3_s0] step  3250  train 1.4829  val 1.4370  acc 0.5924  (2564s)
+[spectral_T96_d96_L3_s0] step  3500  train 1.4453  val 1.4592  acc 0.5811  (2732s)
+[spectral_T96_d96_L3_s0] step  3750  train 1.4296  val 1.3975  acc 0.6018  (2901s)
+[spectral_T96_d96_L3_s0] step  4000  train 1.3874  val 1.3695  acc 0.5990  (3067s)
+[spectral_T96_d96_L3_s0] step  4250  train 1.3735  val 1.3603  acc 0.6008  (3227s)
+[spectral_T96_d96_L3_s0] step  4500  train 1.3371  val 1.3125  acc 0.6338  (3387s)
+[spectral_T96_d96_L3_s0] step  4750  train 1.3176  val 1.3245  acc 0.6107  (3530s)
+[spectral_T96_d96_L3_s0] step  5000  train 1.2804  val 1.2714  acc 0.6191  (3625s)
+[spectral_T96_d96_L3_s0] step  5250  train 1.2592  val 1.2737  acc 0.6359  (3705s)
+[spectral_T96_d96_L3_s0] step  5500  train 1.2485  val 1.2521  acc 0.6333  (3783s)
+[spectral_T96_d96_L3_s0] step  5750  train 1.2236  val 1.2365  acc 0.6321  (3860s)
+[spectral_T96_d96_L3_s0] step  5999 (final) train 1.2045  val 1.2242  acc 0.6441  (3939s)
+[spectral_T96_d96_L3_s0] zero-shot T=96  val 1.2652  acc 0.6379
+[spectral_T96_d96_L3_s0] zero-shot T=192  val 3.5307  acc 0.2148
+[spectral_T96_d96_L3_s0] zero-shot T=384  val 4.1674  acc 0.1725
+[spectral_T96_d96_L3_s0] zero-shot T=768  val 4.3716  acc 0.1442
+[spectral_T96_d96_L3_s0] done in 3943s; best val 1.2242

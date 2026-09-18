@@ -1,0 +1,318 @@
+{
+ "history": [
+  {
+   "step": 0,
+   "val_loss": 5.38684606552124,
+   "val_acc": 0.006666666666666667,
+   "train_loss": 0.0,
+   "lr": 0.005,
+   "elapsed": 1.2596821784973145
+  },
+  {
+   "step": 20,
+   "val_loss": 3.9142818450927734,
+   "val_acc": 0.03307692307692308,
+   "train_loss": 4.468127489089966,
+   "lr": 0.03416666666666667,
+   "elapsed": 2.459606170654297
+  },
+  {
+   "step": 39,
+   "val_loss": 3.6889917850494385,
+   "val_acc": 0.15717948717948718,
+   "train_loss": 3.7025934219360352,
+   "lr": 0.004083333333333334,
+   "elapsed": 3.0223758220672607,
+   "final": true
+  }
+ ],
+ "diagnostics": {
+  "kernel_lag": [
+   {
+    "layer": 0,
+    "mean_abs_H": 1.0000041723251343,
+    "max_abs_H": 1.0124396085739136,
+    "mean_self_fraction": 0.9999998807907104,
+    "min_self_fraction": 0.9999982118606567,
+    "frac_channels_mostly_global": 0.0,
+    "lag0": 0.9999998410551143,
+    "lag1": 2.2805713157079813e-09,
+    "lag2": 2.3360994951615307e-09,
+    "lag3": 2.54025037894823e-09,
+    "lag4": 2.5773636077271873e-09,
+    "lag5": 2.598465432057896e-09,
+    "lag6": 2.4919257327836223e-09,
+    "lag7": 2.3408307967866088e-09,
+    "lag8": 2.3423584556556035e-09,
+    "lag9": 2.4117209776401247e-09,
+    "lag10": 2.4790174594274986e-09,
+    "lag11": 2.4781998954804584e-09,
+    "lag12": 2.5009161236508234e-09,
+    "lag13": 2.5995809783017664e-09,
+    "lag14": 2.5444111769607976e-09,
+    "lag15": 2.5448256580492847e-09,
+    "lag16": 2.5768869544754277e-09,
+    "offdiag_r90": 58,
+    "self_fraction": 0.9999998410551143
+   },
+   {
+    "layer": 1,
+    "mean_abs_H": 1.0000029802322388,
+    "max_abs_H": 1.0111098289489746,
+    "mean_self_fraction": 1.0,
+    "min_self_fraction": 0.999998927116394,
+    "frac_channels_mostly_global": 0.0,
+    "lag0": 1.0,
+    "lag1": 8.65969207964203e-10,
+    "lag2": 8.934639417953766e-10,
+    "lag3": 9.78307285701846e-10,
+    "lag4": 1.001965989132747e-09,
+    "lag5": 1.0213036442731812e-09,
+    "lag6": 1.00744951124946e-09,
+    "lag7": 9.678081619783863e-10,
+    "lag8": 9.456310834713228e-10,
+    "lag9": 9.407866036961234e-10,
+    "lag10": 9.589491285080647e-10,
+    "lag11": 9.65847144276464e-10,
+    "lag12": 9.84085238028721e-10,
+    "lag13": 1.0155127393855272e-09,
+    "lag14": 1.0017574158968907e-09,
+    "lag15": 1.0066003413647966e-09,
+    "lag16": 1.0197260223703138e-09,
+    "offdiag_r90": 58,
+    "self_fraction": 1.0
+   },
+   {
+    "layer": 2,
+    "mean_abs_H": 1.0000003576278687,
+    "max_abs_H": 1.0075503587722778,
+    "mean_self_fraction": 1.0,
+    "min_self_fraction": 0.9999995231628418,
+    "frac_channels_mostly_global": 0.0,
+    "lag0": 1.0,
+    "lag1": 4.1398607175564096e-10,
+    "lag2": 4.363606166373476e-10,
+    "lag3": 4.785430560089774e-10,
+    "lag4": 4.903479084619146e-10,
+    "lag5": 5.001683854457751e-10,
+    "lag6": 4.923125959775861e-10,
+    "lag7": 4.709787370690226e-10,
+    "lag8": 4.5379415134807033e-10,
+    "lag9": 4.490994626392407e-10,
+    "lag10": 4.621041700269687e-10,
+    "lag11": 4.708206043154491e-10,
+    "lag12": 4.824249875135052e-10,
+    "lag13": 5.003155269922783e-10,
+    "lag14": 4.976036964478458e-10,
+    "lag15": 4.987561078558213e-10,
+    "lag16": 5.025486294065383e-10,
+    "offdiag_r90": 58,
+    "self_fraction": 1.0
+   }
+  ]
+ },
+ "cloze": [
+  {
+   "context": "ruited because it w???pro?hesied ?he ?a? co?",
+   "pos_in_window": 19,
+   "target": "a",
+   "pred": " "
+  },
+  {
+   "context": "ruited because it w???pro?hesied ?he ?a? co??",
+   "pos_in_window": 20,
+   "target": "s",
+   "pred": " "
+  },
+  {
+   "context": "ruited because it w???pro?hesied ?he ?a? co??d",
+   "pos_in_window": 21,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "uited because it w???pro?hesied ?he ?a? co??d not",
+   "pos_in_window": 24,
+   "target": "p",
+   "pred": " "
+  },
+  {
+   "context": "n? the ?e?ort in th? journ",
+   "pos_in_window": 1,
+   "target": "g",
+   "pred": " "
+  },
+  {
+   "context": "n? the ?e?ort in th? journal [?S",
+   "pos_in_window": 7,
+   "target": "r",
+   "pred": " "
+  },
+  {
+   "context": "n? the ?e?ort in th? journal [?Sci",
+   "pos_in_window": 9,
+   "target": "p",
+   "pred": " "
+  },
+  {
+   "context": "n? the ?e?ort in th? journal [?Scienc? ?Rour",
+   "pos_in_window": 19,
+   "target": "e",
+   "pred": " "
+  },
+  {
+   "context": "s where one p?rent is ?ither absent ?r",
+   "pos_in_window": 13,
+   "target": "a",
+   "pred": " "
+  },
+  {
+   "context": "s where one p?rent is ?ither absent ?ro? the ho",
+   "pos_in_window": 22,
+   "target": "e",
+   "pred": " "
+  },
+  {
+   "context": "p?rent is ?ither absent ?ro? the hou?ehold or emo",
+   "pos_in_window": 24,
+   "target": "f",
+   "pred": " "
+  },
+  {
+   "context": "ent is ?ither absent ?ro? the hou?ehold or emotio",
+   "pos_in_window": 24,
+   "target": "m",
+   "pred": " "
+  },
+  {
+   "context": "nal trade topics]]\n\n?[C?tegory:Inte?na?ional ",
+   "pos_in_window": 20,
+   "target": "[",
+   "pred": " "
+  },
+  {
+   "context": "nal trade topics]]\n\n?[C?tegory:Inte?na?ional org",
+   "pos_in_window": 23,
+   "target": "a",
+   "pred": " "
+  },
+  {
+   "context": "opics]]\n\n?[C?tegory:Inte?na?ional organ?zations|*",
+   "pos_in_window": 24,
+   "target": "r",
+   "pred": " "
+  },
+  {
+   "context": "cs]]\n\n?[C?tegory:Inte?na?ional organ?zations|*]?\n",
+   "pos_in_window": 24,
+   "target": "t",
+   "pred": " "
+  },
+  {
+   "context": "rucial D??ade: American Foreign R",
+   "pos_in_window": 8,
+   "target": "e",
+   "pred": " "
+  },
+  {
+   "context": "rucial D??ade: American Foreign Re",
+   "pos_in_window": 9,
+   "target": "c",
+   "pred": " "
+  },
+  {
+   "context": "rucial D??ade: American Foreign Relation? ",
+   "pos_in_window": 17,
+   "target": "e",
+   "pred": " "
+  },
+  {
+   "context": "merican Foreign Relation? during t?e ?960s''?(199",
+   "pos_in_window": 24,
+   "target": "s",
+   "pred": " "
+  },
+  {
+   "context": "oups ''a??epts'' theirare?orts.\n*",
+   "pos_in_window": 8,
+   "target": "c",
+   "pred": " "
+  },
+  {
+   "context": "oups ''a??epts'' theirare?orts.\n**",
+   "pos_in_window": 9,
+   "target": "c",
+   "pred": " "
+  },
+  {
+   "context": "oups ''a??epts'' theirare?orts.\n** Tas? F?rce ?",
+   "pos_in_window": 22,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "ups ''a??epts'' theirare?orts.\n** Tas? F?rce ??po",
+   "pos_in_window": 24,
+   "target": "p",
+   "pred": " "
+  }
+ ],
+ "meta": {
+  "tag": "spectral_T128_d96_L3_s0_lr0.05",
+  "mix": "spectral",
+  "T": 128,
+  "d": 96,
+  "L": 3,
+  "F": 384,
+  "steps": 40,
+  "params": 465504,
+  "mix_params": 221760,
+  "active_mix": 37440,
+  "vocab": 206,
+  "corpus_bytes": 100000000,
+  "tokens_per_step": 4096,
+  "seconds": 3.732731819152832,
+  "device": "cuda",
+  "dtype": "float32",
+  "args": {
+   "mix": "spectral",
+   "data": "D:\\dsh\\work\\data\\enwik8",
+   "encoding": "latin-1",
+   "val_frac": 0.05,
+   "outdir": "D:\\dsh\\work\\scaleup\\runs\\bench",
+   "tag": "",
+   "device": "cuda",
+   "dtype": "float32",
+   "tf32": false,
+   "steps": 40,
+   "T": 128,
+   "t_max": 768,
+   "d": 96,
+   "L": 3,
+   "F": 384,
+   "heads": 4,
+   "stencil_k": 2,
+   "batch": 32,
+   "grad_accum": 1,
+   "eval_batch": 4,
+   "extrap_batch": 4,
+   "eval_every": 20,
+   "eval_batches": 2,
+   "lr": 0.05,
+   "momentum": 0.9,
+   "clip": 1.0,
+   "warmup": 10,
+   "mask_prob": 0.15,
+   "pos": "sin",
+   "seed": 0,
+   "wo_zero": false,
+   "extrapolate": [],
+   "save_weights": false,
+   "save_every": 0,
+   "resume": false,
+   "equiv_npz": null,
+   "equiv_bug": "upstream",
+   "upstream_bug": false
+  }
+ }
+}

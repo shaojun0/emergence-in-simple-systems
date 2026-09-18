@@ -1,0 +1,5 @@
+D:\dsh\work\scaleup\scripts\spectral_lm_torch.py:510: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:212.)
+  self.train = torch.as_tensor(np.ascontiguousarray(corpus.train), device=device)
+== run s3_fnet_T512_d384_L6_s0_lr0.8 | corpus 100.0MB vocab=206 | params=7178496 (mix=0 active=0) | cuda torch.float32
+[s3_fnet_T512_d384_L6_s0_lr0.8] step      0  train 0.0000  val 5.3760  acc 0.0642  (1s)
+[s3_fnet_T512_d384_L6_s0_lr0.8] step    250  train 3.7799  val 3.4945  acc 0.1241  (97s)

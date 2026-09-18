@@ -1,0 +1,31 @@
+== run fnet_T96_d96_L3_s0 | vocab=66 | params=230304 (mix=0, 0.0%) | threads=1
+[fnet_T96_d96_L3_s0] step     0  train 0.0000  val 4.2005  acc 0.0183  (1s)
+[fnet_T96_d96_L3_s0] step   250  train 3.3273  val 3.1800  acc 0.1747  (164s)
+[fnet_T96_d96_L3_s0] step   500  train 3.1069  val 3.0181  acc 0.2010  (331s)
+[fnet_T96_d96_L3_s0] step   750  train 3.0237  val 2.9248  acc 0.2021  (502s)
+[fnet_T96_d96_L3_s0] step  1000  train 2.9499  val 2.8492  acc 0.2157  (670s)
+[fnet_T96_d96_L3_s0] step  1250  train 2.8685  val 2.7676  acc 0.2468  (835s)
+[fnet_T96_d96_L3_s0] step  1500  train 2.8021  val 2.7344  acc 0.2405  (1011s)
+[fnet_T96_d96_L3_s0] step  1750  train 2.7385  val 2.6804  acc 0.2734  (1179s)
+[fnet_T96_d96_L3_s0] step  2000  train 2.6980  val 2.6252  acc 0.2718  (1345s)
+[fnet_T96_d96_L3_s0] step  2250  train 2.6656  val 2.5927  acc 0.2871  (1509s)
+[fnet_T96_d96_L3_s0] step  2500  train 2.6453  val 2.5693  acc 0.3063  (1670s)
+[fnet_T96_d96_L3_s0] step  2750  train 2.5954  val 2.5300  acc 0.2943  (1833s)
+[fnet_T96_d96_L3_s0] step  3000  train 2.5680  val 2.5435  acc 0.2935  (1998s)
+[fnet_T96_d96_L3_s0] step  3250  train 2.5574  val 2.4343  acc 0.3272  (2163s)
+[fnet_T96_d96_L3_s0] step  3500  train 2.5263  val 2.4677  acc 0.3060  (2327s)
+[fnet_T96_d96_L3_s0] step  3750  train 2.4979  val 2.4502  acc 0.3137  (2474s)
+[fnet_T96_d96_L3_s0] step  4000  train 2.4692  val 2.4251  acc 0.3254  (2622s)
+[fnet_T96_d96_L3_s0] step  4250  train 2.4635  val 2.3958  acc 0.3337  (2760s)
+[fnet_T96_d96_L3_s0] step  4500  train 2.4427  val 2.3753  acc 0.3460  (2900s)
+[fnet_T96_d96_L3_s0] step  4750  train 2.4184  val 2.3613  acc 0.3367  (3040s)
+[fnet_T96_d96_L3_s0] step  5000  train 2.3843  val 2.3329  acc 0.3483  (3173s)
+[fnet_T96_d96_L3_s0] step  5250  train 2.3673  val 2.2895  acc 0.3639  (3306s)
+[fnet_T96_d96_L3_s0] step  5500  train 2.3556  val 2.2950  acc 0.3629  (3442s)
+[fnet_T96_d96_L3_s0] step  5750  train 2.3359  val 2.2652  acc 0.3615  (3545s)
+[fnet_T96_d96_L3_s0] step  5999 (final) train 2.3206  val 2.2539  acc 0.3695  (3626s)
+[fnet_T96_d96_L3_s0] zero-shot T=96  val 2.3482  acc 0.3460
+[fnet_T96_d96_L3_s0] zero-shot T=192  val 3.7727  acc 0.1207
+[fnet_T96_d96_L3_s0] zero-shot T=384  val 4.1898  acc 0.1078
+[fnet_T96_d96_L3_s0] zero-shot T=768  val 5.0834  acc 0.1060
+[fnet_T96_d96_L3_s0] done in 3629s; best val 2.2539

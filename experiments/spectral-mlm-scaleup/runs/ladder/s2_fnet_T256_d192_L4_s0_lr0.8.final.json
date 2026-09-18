@@ -1,0 +1,538 @@
+{
+ "history": [
+  {
+   "step": 0,
+   "val_loss": 5.317378222942352,
+   "val_acc": 0.05914885034707697,
+   "train_loss": 0.0,
+   "lr": 0.004,
+   "elapsed": 0.3544044494628906
+  },
+  {
+   "step": 250,
+   "val_loss": 3.398987054824829,
+   "val_acc": 0.15243555824975816,
+   "train_loss": 3.702582516670227,
+   "lr": 0.7961224489795918,
+   "elapsed": 22.481613874435425
+  },
+  {
+   "step": 500,
+   "val_loss": 3.194633901119232,
+   "val_acc": 0.1941912680445521,
+   "train_loss": 3.277663918495178,
+   "lr": 0.7767346938775511,
+   "elapsed": 44.55400848388672
+  },
+  {
+   "step": 750,
+   "val_loss": 3.04983451962471,
+   "val_acc": 0.21754038350616753,
+   "train_loss": 3.14202752494812,
+   "lr": 0.7573469387755103,
+   "elapsed": 66.53386425971985
+  },
+  {
+   "step": 1000,
+   "val_loss": 2.9711625576019287,
+   "val_acc": 0.22709646825525584,
+   "train_loss": 3.049393262863159,
+   "lr": 0.7379591836734694,
+   "elapsed": 88.49481558799744
+  },
+  {
+   "step": 1250,
+   "val_loss": 2.904389262199402,
+   "val_acc": 0.23971693870156358,
+   "train_loss": 2.9570235290527345,
+   "lr": 0.7185714285714286,
+   "elapsed": 110.54654836654663
+  },
+  {
+   "step": 1500,
+   "val_loss": 2.805517256259918,
+   "val_acc": 0.26445250985758695,
+   "train_loss": 2.875552466392517,
+   "lr": 0.6991836734693878,
+   "elapsed": 132.63646960258484
+  },
+  {
+   "step": 1750,
+   "val_loss": 2.747426748275757,
+   "val_acc": 0.2669206555765504,
+   "train_loss": 2.803552626609802,
+   "lr": 0.679795918367347,
+   "elapsed": 154.74896025657654
+  },
+  {
+   "step": 2000,
+   "val_loss": 2.726698487997055,
+   "val_acc": 0.26936166219972285,
+   "train_loss": 2.756759903907776,
+   "lr": 0.6604081632653062,
+   "elapsed": 176.82487201690674
+  },
+  {
+   "step": 2250,
+   "val_loss": 2.6879886388778687,
+   "val_acc": 0.2864235848604344,
+   "train_loss": 2.7230000295639036,
+   "lr": 0.6410204081632653,
+   "elapsed": 198.94978189468384
+  },
+  {
+   "step": 2500,
+   "val_loss": 2.667068064212799,
+   "val_acc": 0.2898330527470855,
+   "train_loss": 2.7019662113189695,
+   "lr": 0.6216326530612245,
+   "elapsed": 221.04787874221802
+  },
+  {
+   "step": 2750,
+   "val_loss": 2.64780455827713,
+   "val_acc": 0.2955914414280104,
+   "train_loss": 2.674321029663086,
+   "lr": 0.6022448979591837,
+   "elapsed": 243.17796349525452
+  },
+  {
+   "step": 3000,
+   "val_loss": 2.6060624718666077,
+   "val_acc": 0.30579984184622,
+   "train_loss": 2.6482696924209597,
+   "lr": 0.582857142857143,
+   "elapsed": 265.25238132476807
+  },
+  {
+   "step": 3250,
+   "val_loss": 2.5741223990917206,
+   "val_acc": 0.3116199871842412,
+   "train_loss": 2.6051872720718383,
+   "lr": 0.5634693877551021,
+   "elapsed": 287.3584740161896
+  },
+  {
+   "step": 3500,
+   "val_loss": 2.5276371836662292,
+   "val_acc": 0.3297054585493602,
+   "train_loss": 2.5828020458221435,
+   "lr": 0.5440816326530612,
+   "elapsed": 309.4699592590332
+  },
+  {
+   "step": 3750,
+   "val_loss": 2.5570387840270996,
+   "val_acc": 0.32978491679444655,
+   "train_loss": 2.5663865442276,
+   "lr": 0.5246938775510204,
+   "elapsed": 331.56237030029297
+  },
+  {
+   "step": 4000,
+   "val_loss": 2.511264383792877,
+   "val_acc": 0.3306172512543536,
+   "train_loss": 2.5345871171951293,
+   "lr": 0.5053061224489797,
+   "elapsed": 353.6623089313507
+  },
+  {
+   "step": 4250,
+   "val_loss": 2.5041032433509827,
+   "val_acc": 0.3280974393451801,
+   "train_loss": 2.520954110145569,
+   "lr": 0.4859183673469388,
+   "elapsed": 375.7783136367798
+  },
+  {
+   "step": 4500,
+   "val_loss": 2.4834257662296295,
+   "val_acc": 0.34301883189299026,
+   "train_loss": 2.502777826309204,
+   "lr": 0.466530612244898,
+   "elapsed": 397.88750195503235
+  },
+  {
+   "step": 4750,
+   "val_loss": 2.4801507890224457,
+   "val_acc": 0.3399154039126771,
+   "train_loss": 2.4923733673095705,
+   "lr": 0.4471428571428572,
+   "elapsed": 420.00309348106384
+  },
+  {
+   "step": 5000,
+   "val_loss": 2.4304122030735016,
+   "val_acc": 0.3475507028591019,
+   "train_loss": 2.4676450510025023,
+   "lr": 0.42775510204081635,
+   "elapsed": 442.1237623691559
+  },
+  {
+   "step": 5250,
+   "val_loss": 2.4342834651470184,
+   "val_acc": 0.34607616075490266,
+   "train_loss": 2.460417812347412,
+   "lr": 0.4083673469387756,
+   "elapsed": 464.2269217967987
+  },
+  {
+   "step": 5500,
+   "val_loss": 2.4521703720092773,
+   "val_acc": 0.358239838757101,
+   "train_loss": 2.44146780872345,
+   "lr": 0.3889795918367347,
+   "elapsed": 485.6658592224121
+  },
+  {
+   "step": 5750,
+   "val_loss": 2.4020796418190002,
+   "val_acc": 0.34926764600308285,
+   "train_loss": 2.4317913513183593,
+   "lr": 0.36959183673469387,
+   "elapsed": 499.66179060935974
+  },
+  {
+   "step": 6000,
+   "val_loss": 2.3961358964443207,
+   "val_acc": 0.3569248050196864,
+   "train_loss": 2.423149085044861,
+   "lr": 0.3502040816326531,
+   "elapsed": 521.3288819789886
+  },
+  {
+   "step": 6250,
+   "val_loss": 2.3848984241485596,
+   "val_acc": 0.3576113141152778,
+   "train_loss": 2.406510174751282,
+   "lr": 0.3308163265306123,
+   "elapsed": 542.9997458457947
+  },
+  {
+   "step": 6500,
+   "val_loss": 2.374540776014328,
+   "val_acc": 0.36701825477082395,
+   "train_loss": 2.4034225063323973,
+   "lr": 0.3114285714285714,
+   "elapsed": 564.6744101047516
+  },
+  {
+   "step": 6750,
+   "val_loss": 2.3733989000320435,
+   "val_acc": 0.35524760631430596,
+   "train_loss": 2.3993488998413084,
+   "lr": 0.2920408163265306,
+   "elapsed": 586.3622951507568
+  },
+  {
+   "step": 7000,
+   "val_loss": 2.344253361225128,
+   "val_acc": 0.3623809573099467,
+   "train_loss": 2.3759130001068116,
+   "lr": 0.2726530612244899,
+   "elapsed": 608.0574743747711
+  },
+  {
+   "step": 7250,
+   "val_loss": 2.332144111394882,
+   "val_acc": 0.37242904196186244,
+   "train_loss": 2.3579161834716795,
+   "lr": 0.253265306122449,
+   "elapsed": 629.7349157333374
+  },
+  {
+   "step": 7500,
+   "val_loss": 2.332286447286606,
+   "val_acc": 0.37304356758262197,
+   "train_loss": 2.3563063707351684,
+   "lr": 0.2338775510204082,
+   "elapsed": 651.4133017063141
+  },
+  {
+   "step": 7750,
+   "val_loss": 2.3153275847434998,
+   "val_acc": 0.3766861036969318,
+   "train_loss": 2.339705659866333,
+   "lr": 0.21448979591836734,
+   "elapsed": 673.0967328548431
+  },
+  {
+   "step": 8000,
+   "val_loss": 2.3156761825084686,
+   "val_acc": 0.3739772809836287,
+   "train_loss": 2.3418554325103758,
+   "lr": 0.19510204081632657,
+   "elapsed": 694.8004405498505
+  },
+  {
+   "step": 8250,
+   "val_loss": 2.2915016412734985,
+   "val_acc": 0.3885421540661343,
+   "train_loss": 2.3123939514160154,
+   "lr": 0.17571428571428582,
+   "elapsed": 716.4892523288727
+  },
+  {
+   "step": 8500,
+   "val_loss": 2.311612904071808,
+   "val_acc": 0.3758181664426376,
+   "train_loss": 2.3057723569869997,
+   "lr": 0.15632653061224488,
+   "elapsed": 738.1595194339752
+  },
+  {
+   "step": 8750,
+   "val_loss": 2.284794896841049,
+   "val_acc": 0.38407384239262815,
+   "train_loss": 2.3075439968109133,
+   "lr": 0.1369387755102041,
+   "elapsed": 759.822594165802
+  },
+  {
+   "step": 9000,
+   "val_loss": 2.2660226821899414,
+   "val_acc": 0.39053637627673354,
+   "train_loss": 2.2996131992340088,
+   "lr": 0.11755102040816334,
+   "elapsed": 781.5216979980469
+  },
+  {
+   "step": 9250,
+   "val_loss": 2.266591042280197,
+   "val_acc": 0.3880875259502848,
+   "train_loss": 2.286076602935791,
+   "lr": 0.0981632653061225,
+   "elapsed": 803.1958966255188
+  },
+  {
+   "step": 9500,
+   "val_loss": 2.2507310807704926,
+   "val_acc": 0.38935547765701456,
+   "train_loss": 2.2780460090637207,
+   "lr": 0.07877551020408165,
+   "elapsed": 819.8240623474121
+  },
+  {
+   "step": 9750,
+   "val_loss": 2.241945743560791,
+   "val_acc": 0.3935466440670324,
+   "train_loss": 2.2637892541885374,
+   "lr": 0.0593877551020408,
+   "elapsed": 838.0669467449188
+  },
+  {
+   "step": 9999,
+   "val_loss": 2.232645183801651,
+   "val_acc": 0.40692829319811646,
+   "train_loss": 2.254912065982819,
+   "lr": 0.0400775510204082,
+   "elapsed": 859.885449886322,
+   "final": true
+  }
+ ],
+ "diagnostics": {},
+ "cloze": [
+  {
+   "context": "means that much of ??? dr?ving fo?ce ?o?for?",
+   "pos_in_window": 19,
+   "target": "t",
+   "pred": "e"
+  },
+  {
+   "context": "means that much of ??? dr?ving fo?ce ?o?for??",
+   "pos_in_window": 20,
+   "target": "h",
+   "pred": "n"
+  },
+  {
+   "context": "means that much of ??? dr?ving fo?ce ?o?for??s",
+   "pos_in_window": 21,
+   "target": "e",
+   "pred": "a"
+  },
+  {
+   "context": "eans that much of ??? dr?ving fo?ce ?o?for??such ",
+   "pos_in_window": 24,
+   "target": "i",
+   "pred": "e"
+  },
+  {
+   "context": "ition.\nOthers?were not?so fortunate.?I",
+   "pos_in_window": 13,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "ition.\nOthers?were not?so fortunate.?In?[[1529]",
+   "pos_in_window": 22,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "s?were not?so fortunate.?In?[[1529]]?a congregati",
+   "pos_in_window": 24,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "ere not?so fortunate.?In?[[1529]]?a congregation ",
+   "pos_in_window": 24,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": " (if the??disagree with the major",
+   "pos_in_window": 8,
+   "target": "y",
+   "pred": " "
+  },
+  {
+   "context": " (if the??disagree with the majori",
+   "pos_in_window": 9,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": " (if the??disagree with the majority). N? ",
+   "pos_in_window": 17,
+   "target": "e",
+   "pred": "e"
+  },
+  {
+   "context": "ee with the majority). N? appeal i? p?ssible?\n\n==",
+   "pos_in_window": 24,
+   "target": "o",
+   "pred": "i"
+  },
+  {
+   "context": "pean sou?d laws}}\nA? the  Proto-I",
+   "pos_in_window": 8,
+   "target": "n",
+   "pred": " "
+  },
+  {
+   "context": "pean sou?d laws}}\nA? the  Proto-Indo-Europea",
+   "pos_in_window": 19,
+   "target": "s",
+   "pred": " "
+  },
+  {
+   "context": "pean sou?d laws}}\nA? the  Proto-Indo-European l",
+   "pos_in_window": 22,
+   "target": "h",
+   "pred": "h"
+  },
+  {
+   "context": "an sou?d laws}}\nA? the  Proto-Indo-European l?ngu",
+   "pos_in_window": 24,
+   "target": "P",
+   "pred": "P"
+  },
+  {
+   "context": "?is ?lso forced?to c?t ba",
+   "pos_in_window": 0,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "?is ?lso forced?to c?t back a",
+   "pos_in_window": 4,
+   "target": "a",
+   "pred": "a"
+  },
+  {
+   "context": "?is ?lso forced?to c?t back af?er be?ng ",
+   "pos_in_window": 15,
+   "target": " ",
+   "pred": " "
+  },
+  {
+   "context": "?is ?lso forced?to c?t back af?er be?ng sent ",
+   "pos_in_window": 20,
+   "target": "u",
+   "pred": "h"
+  },
+  {
+   "context": "??SEPP]]\n* ???t?:?/www.ma",
+   "pos_in_window": 0,
+   "target": "[",
+   "pred": " "
+  },
+  {
+   "context": "??SEPP]]\n* ???t?:?/www.ma?",
+   "pos_in_window": 1,
+   "target": "[",
+   "pred": " "
+  },
+  {
+   "context": "??SEPP]]\n* ???t?:?/www.ma?icore.com/",
+   "pos_in_window": 11,
+   "target": "[",
+   "pred": "["
+  },
+  {
+   "context": "??SEPP]]\n* ???t?:?/www.ma?icore.com/a",
+   "pos_in_window": 12,
+   "target": "h",
+   "pred": "]"
+  }
+ ],
+ "meta": {
+  "tag": "s2_fnet_T256_d192_L4_s0_lr0.8",
+  "mix": "fnet",
+  "T": 256,
+  "d": 192,
+  "L": 4,
+  "F": 768,
+  "steps": 10000,
+  "params": 1226496,
+  "mix_params": 0,
+  "active_mix": 0,
+  "vocab": 206,
+  "corpus_bytes": 100000000,
+  "tokens_per_step": 4096,
+  "seconds": 859.9109888076782,
+  "device": "cuda",
+  "dtype": "float32",
+  "args": {
+   "mix": "fnet",
+   "data": "D:\\dsh\\work\\data\\enwik8",
+   "encoding": "latin-1",
+   "val_frac": 0.05,
+   "outdir": "D:\\dsh\\work\\scaleup\\runs\\ladder",
+   "tag": "s2",
+   "device": "cuda",
+   "dtype": "float32",
+   "tf32": false,
+   "steps": 10000,
+   "T": 256,
+   "t_max": 1024,
+   "d": 192,
+   "L": 4,
+   "F": 768,
+   "heads": 6,
+   "stencil_k": 2,
+   "batch": 16,
+   "grad_accum": 1,
+   "eval_batch": 8,
+   "extrap_batch": 4,
+   "eval_every": 250,
+   "eval_batches": 8,
+   "lr": 0.8,
+   "momentum": 0.9,
+   "clip": 1.0,
+   "warmup": 200,
+   "mask_prob": 0.15,
+   "pos": "sin",
+   "seed": 0,
+   "wo_zero": false,
+   "extrapolate": [],
+   "save_weights": false,
+   "save_every": 0,
+   "resume": false,
+   "equiv_npz": null,
+   "equiv_bug": "upstream",
+   "upstream_bug": false
+  }
+ }
+}

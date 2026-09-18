@@ -1,0 +1,31 @@
+== run attn_T96_d96_L3_s0 | vocab=66 | params=342048 (mix=111744, 32.7%) | threads=1
+[attn_T96_d96_L3_s0] step     0  train 0.0000  val 4.2309  acc 0.0091  (2s)
+[attn_T96_d96_L3_s0] step   250  train 3.3811  val 3.3559  acc 0.0851  (308s)
+[attn_T96_d96_L3_s0] step   500  train 3.2974  val 3.1723  acc 0.1652  (625s)
+[attn_T96_d96_L3_s0] step   750  train 2.9846  val 2.6474  acc 0.2688  (939s)
+[attn_T96_d96_L3_s0] step  1000  train 2.5221  val 2.4448  acc 0.3113  (1254s)
+[attn_T96_d96_L3_s0] step  1250  train 2.8360  val 3.2296  acc 0.1727  (1560s)
+[attn_T96_d96_L3_s0] step  1500  train 3.3347  val 3.3623  acc 0.1285  (1868s)
+[attn_T96_d96_L3_s0] step  1750  train 3.3858  val 3.2679  acc 0.1656  (2180s)
+[attn_T96_d96_L3_s0] step  2000  train 3.4098  val 3.5467  acc 0.1057  (2473s)
+[attn_T96_d96_L3_s0] step  2250  train 3.4183  val 3.3247  acc 0.1403  (2745s)
+[attn_T96_d96_L3_s0] step  2500  train 3.3973  val 3.2797  acc 0.1695  (3012s)
+[attn_T96_d96_L3_s0] step  2750  train 3.3735  val 3.4068  acc 0.0959  (3267s)
+[attn_T96_d96_L3_s0] step  3000  train 3.3439  val 3.3881  acc 0.1060  (3513s)
+[attn_T96_d96_L3_s0] step  3250  train 3.2905  val 3.2702  acc 0.1662  (3658s)
+[attn_T96_d96_L3_s0] step  3500  train 3.3188  val 3.3221  acc 0.1796  (3782s)
+[attn_T96_d96_L3_s0] step  3750  train 3.2887  val 3.2931  acc 0.1742  (3905s)
+[attn_T96_d96_L3_s0] step  4000  train 3.2915  val 3.2728  acc 0.1753  (4014s)
+[attn_T96_d96_L3_s0] step  4250  train 3.2832  val 3.2461  acc 0.1760  (4118s)
+[attn_T96_d96_L3_s0] step  4500  train 3.2764  val 3.2549  acc 0.1790  (4221s)
+[attn_T96_d96_L3_s0] step  4750  train 3.2764  val 3.2790  acc 0.1290  (4323s)
+[attn_T96_d96_L3_s0] step  5000  train 3.2459  val 3.2656  acc 0.1806  (4425s)
+[attn_T96_d96_L3_s0] step  5250  train 3.2290  val 3.2607  acc 0.1797  (4528s)
+[attn_T96_d96_L3_s0] step  5500  train 3.2270  val 3.2294  acc 0.1753  (4632s)
+[attn_T96_d96_L3_s0] step  5750  train 3.1997  val 3.1932  acc 0.1874  (4734s)
+[attn_T96_d96_L3_s0] step  5999 (final) train 3.1759  val 3.1803  acc 0.1954  (4818s)
+[attn_T96_d96_L3_s0] zero-shot T=96  val 3.2251  acc 0.1833
+[attn_T96_d96_L3_s0] zero-shot T=192  val 3.1644  acc 0.1851
+[attn_T96_d96_L3_s0] zero-shot T=384  val 3.2589  acc 0.1869
+[attn_T96_d96_L3_s0] zero-shot T=768  val 3.2380  acc 0.1909
+[attn_T96_d96_L3_s0] done in 4829s; best val 2.4448
