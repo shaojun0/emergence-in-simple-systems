@@ -49,6 +49,7 @@ python scripts\run_stageA.py main followup
 python scripts\run_equiv.py            # 10/10 PASS
 python scripts\check_trajectory.py     # 3/3 PASS，150 步 1e-15
 python scripts\check_ln_bug.py         # 有限差分钉死实验一的 bug
+python scripts\check_ln_bug_independent.py   # 独立复核（不同方法，自带机器判据）
 
 # Stage C：放大 100×（GPU）
 python scripts\run_stageC.py lr        # 学习率扫描
@@ -75,6 +76,7 @@ scripts\run_stageA.py          Stage A：原始 NumPy 代码的忠实复现
 scripts\run_equiv.py           Stage B：移植版与实验一的逐参数梯度等价性
 scripts\check_trajectory.py    Stage B：150 步完整训练轨迹等价性
 scripts\check_ln_bug.py        Stage B：用中心差分钉死实验一的 W1 梯度 bug
+scripts\check_ln_bug_independent.py   Stage B：同一 bug 的独立复核（不同方法 + 机器判据）
 scripts\run_stageC.py          Stage C：lr 扫描 / scale ladder / fair / extra
 scripts\run_stageD.py          Stage D：p4 / p64 / double 长程合成任务
 scripts\run_stageD2.py         Stage D2：p64 上的注意力 lr 扫描

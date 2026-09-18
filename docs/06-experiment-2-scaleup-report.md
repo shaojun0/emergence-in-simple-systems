@@ -182,7 +182,7 @@ G["%d.W1" % l] += c["%d.ln2" % l][0].reshape(-1,d).T @ df   # ← cache[0] 是�
 
 **影响评估**：这个错误只影响 MLP 第一层权重（`W1`）的更新方向，且误差随 `ln2g` 偏离 1 的幅度增长。它不会让训练发散（实验一的结果确实在学），但它意味着实验一报告的每一条训练曲线都不是"该损失函数的 SGD 轨迹"。本报告 §5 的放大实验用**正确梯度**（默认），并在 §5.6 给出该 bug 在放大尺度上的影响量级。
 
-> **本报告作者对该 bug 的独立复核**（不依赖上面四重证据，重新写的脚本）：
+> **独立复核**（`scripts/check_ln_bug_independent.py`，不依赖上面四重证据、用不同方法重写）：
 > 在真实模型上做中心差分，分别在 (A) 初始化点 `g=1,b=0` 和 (B) 扰动后 `g≠1,b≠0` 两种状态下比较数值梯度：
 >
 > | 状态 | `max\|bb−xh\|` | 平均绝对误差（对实验一解析梯度） | 平均绝对误差（对修正后梯度） |
@@ -190,7 +190,9 @@ G["%d.W1" % l] += c["%d.ln2" % l][0].reshape(-1,d).T @ df   # ← cache[0] 是�
 > | A. 初始化点 | 0.0 | **1.3e-11**（= 差分噪声） | 1.3e-11 |
 > | B. 偏离初始化 | 1.21–1.32 | **2.7e-04** | **1.1e-11** |
 >
-> 结论与上述四重证据一致：bug 真实存在，且**在初始化点严格不可见**。
+> 脚本自带机器判据（state B 上 |num−实验一| 是否比 |num−修正| 大两个数量级），
+> 退出码 0 即 `BUG CONFIRMED`。结论与上述四重证据一致：bug 真实存在，
+> 且**在初始化点严格不可见**。
 
 ---
 
@@ -500,6 +502,7 @@ python scripts\run_stageA.py main followup
 python scripts\run_equiv.py            # 10/10 PASS
 python scripts\check_trajectory.py     # 3/3 PASS，150 步 1e-15
 python scripts\check_ln_bug.py         # 有限差分钉死实验一的 bug
+python scripts\check_ln_bug_independent.py   # 独立复核（不同方法，自带机器判据）
 
 # 3) 参照线（需先取 enwik8 语料，见 scripts/fetch.py）
 python scripts\count_baselines.py --data <corpus> --encoding utf-8 --ks 1 2 3 4

@@ -159,6 +159,7 @@ experiments/
     scripts/run_stage*.py            Stage A 忠实复现 / Stage C ladder / Stage D 长程任务
     scripts/run_equiv.py             与实验一的逐参数梯度等价性检验
     scripts/check_ln_bug.py          用中心差分钉死实验一的 W1 梯度 bug
+    scripts/check_ln_bug_independent.py  该 bug 的独立复核（不同方法 + 机器判据）
     scripts/verify_claims.py         从原始 run 文件复算报告里的 78 个数字
     runs/ logs/ figures/ ref/        原始运行数据、stdout、图、等价性参考 dump
 ```
@@ -183,6 +184,7 @@ cd experiments/spectral-mlm-scaleup
 python scripts/run_stageA.py main followup     # Stage A：原始规模的忠实复现（CPU）
 python scripts/run_equiv.py                    # Stage B：数值等价性 10/10 PASS
 python scripts/check_ln_bug.py                 # Stage B：有限差分钉死实验一的 bug
+python scripts/check_ln_bug_independent.py     # Stage B：该 bug 的独立复核
 python scripts/run_stageC.py ladder            # Stage C：s1/s2/s3 × 4 臂
 python scripts/run_stageD.py                   # Stage D：长程合成任务
 python scripts/plot.py                         # 出图
